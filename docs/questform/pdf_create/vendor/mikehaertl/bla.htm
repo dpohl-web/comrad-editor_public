@@ -1,0 +1,344 @@
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+manifest.json provides metadata used when your web app is added to the
+homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+-->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+Notice the use of  in the tags above.
+It will be replaced with the URL of the `public` folder during the build.
+Only files inside the `public` folder can be referenced from the HTML.
+
+Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+work correctly both with client-side routing and a non-root public URL.
+Learn how to configure a non-root public URL by running `npm run build`.
+-->
+    <title>React App</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+                'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+        }
+    </style>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+    </style>
+    <style type="text/css">
+        .App {
+            text-align: center;
+        }
+
+        .App-logo {
+            -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+            height: 40vmin;
+        }
+
+        .App-header {
+            background-color: #282c34;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: calc(10px + 2vmin);
+            color: white;
+        }
+
+        .App-link {
+            color: #61dafb;
+        }
+        @media (min-width: 800px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+        .chart-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        @-webkit-keyframes App-logo-spin {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes App-logo-spin {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @media print {
+            h2 {
+                visibility: hidden !important;
+            }
+            body {
+                width: 210mm;
+            }
+            body * {
+                visibility: hidden;
+                -webkit-print-color-adjust: exact !important;
+            }
+
+            .printButton {
+                visibility: hidden !important;
+            }
+
+            .chart-container {
+                /* width: 100vw !important; */
+                height: 400px !important;
+            }
+
+            .chartjs-render-monitor {
+                height: 400px !important;
+            }
+
+            .printContent * {
+                visibility: visible;
+                /* text-align: left; */
+                -webkit-print-color-adjust: exact !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        /*
+* contextMenu.js v 1.4.0
+* Author: Sudhanshu Yadav
+* s-yadav.github.com
+* Copyright (c) 2013 Sudhanshu Yadav.
+* Dual licensed under the MIT and GPL licenses
+**/
+
+        .iw-contextMenu {
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1) !important;
+            border: 1px solid #c8c7cc !important;
+            border-radius: 11px !important;
+            display: none;
+            z-index: 1000000132;
+            max-width: 300px !important;
+            width: auto !important;
+        }
+
+        .dark-mode .iw-contextMenu,
+        .TnITTtw-dark-mode.iw-contextMenu,
+        .TnITTtw-dark-mode .iw-contextMenu {
+            border-color: #747473 !important;
+        }
+
+        .iw-cm-menu {
+            background: #fff !important;
+            color: #000 !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            overflow: visible !important;
+        }
+
+        .dark-mode .iw-cm-menu,
+        .TnITTtw-dark-mode.iw-cm-menu,
+        .TnITTtw-dark-mode .iw-cm-menu {
+            background: #525251 !important;
+            color: #fff !important;
+        }
+
+        .iw-curMenu {
+        }
+
+        .iw-cm-menu li {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, Ubuntu, sans-serif !important;
+            list-style: none !important;
+            padding: 10px !important;
+            padding-right: 20px !important;
+            border-bottom: 1px solid #c8c7cc !important;
+            font-weight: 400 !important;
+            cursor: pointer !important;
+            position: relative !important;
+            font-size: 14px !important;
+            margin: 0 !important;
+            line-height: inherit !important;
+            border-radius: 0 !important;
+            display: block !important;
+        }
+
+        .dark-mode .iw-cm-menu li,
+        .TnITTtw-dark-mode .iw-cm-menu li {
+            border-bottom-color: #747473 !important;
+        }
+
+        .iw-cm-menu li:first-child {
+            border-top-left-radius: 11px !important;
+            border-top-right-radius: 11px !important;
+        }
+
+        .iw-cm-menu li:last-child {
+            border-bottom-left-radius: 11px !important;
+            border-bottom-right-radius: 11px !important;
+            border-bottom: none !important;
+        }
+
+        .iw-mOverlay {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0px !important;
+            left: 0px !important;
+            background: #fff !important;
+            opacity: 0.5 !important;
+        }
+
+        .iw-contextMenu li.iw-mDisable {
+            opacity: 0.3 !important;
+            cursor: default !important;
+        }
+
+        .iw-mSelected {
+            background-color: #f6f6f6 !important;
+        }
+
+        .dark-mode .iw-mSelected,
+        .TnITTtw-dark-mode .iw-mSelected {
+            background-color: #676766 !important;
+        }
+
+        .iw-cm-arrow-right {
+            width: 0 !important;
+            height: 0 !important;
+            border-top: 5px solid transparent !important;
+            border-bottom: 5px solid transparent !important;
+            border-left: 5px solid #000 !important;
+            position: absolute !important;
+            right: 5px !important;
+            top: 50% !important;
+            margin-top: -5px !important;
+        }
+
+        .dark-mode .iw-cm-arrow-right,
+        .TnITTtw-dark-mode .iw-cm-arrow-right {
+            border-left-color: #fff !important;
+        }
+
+        .iw-mSelected > .iw-cm-arrow-right {
+        }
+
+        /*context menu css end */
+    </style>
+    <style type="text/css">
+        @-webkit-keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+                    -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+                    -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em,
+                    -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em,
+                    -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0,
+                    -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em,
+                    -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+                    -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+                    -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+
+        @keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+                    -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em,
+                    -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em,
+                    -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em,
+                    -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0,
+                    -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em,
+                    -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+                    -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0,
+                    -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+    </style>
+    <style type="text/css">
+        /* This is not a zero-length file! */
+    </style>
+</head>

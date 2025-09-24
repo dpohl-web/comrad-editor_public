@@ -1,0 +1,21 @@
+@import "src/variables.scss";
+// .colorChooseButton {
+//     display: flex;
+//     width: $button-height;
+//     height: $button-height;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+.mat-progress-spinner {
+    position: relative;
+    display: inline-block;
+    top: 17px;
+    left: 20px;
+}
+
+.csv-string-area-span {
+    color: #fff;
+    margin: $spacing--medium 0;
+    padding: $spacing--medium;
+}

@@ -1,0 +1,10 @@
+
+First set env variable to show theplaywright inspector: export PWDEBUG=1
+
+For record of tests: npx playwright codegen http://localhost:4200
+
+For stepping through the test use: npx playwright test ./tests/flow.spec.ts --headed
+
+Debugging tests with breakpoints:
+
+Use vscode plugin: "Playwright Test for VSCode" from Microsoft.

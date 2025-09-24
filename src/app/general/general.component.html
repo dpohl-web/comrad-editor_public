@@ -1,0 +1,124 @@
+<mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <ng-template matStepLabel>{{ "mode" | translate }}</ng-template>
+    <form [formGroup]="firstFormGroup">
+      <mat-radio-group
+        (change)="editNewDeleteAction($event.value, stepper)"
+        layout="column"
+        formControlName="firstCtrl"
+        required
+      >
+        <ul>
+          <li>
+            <mat-radio-button value="new">{{ "newQuestionnaire" | translate }}</mat-radio-button>
+          </li>
+          <li>
+            <mat-radio-button value="edit">{{ "editQuestionnaire" | translate }}</mat-radio-button>
+          </li>
+          <li>
+            <mat-radio-button value="delete"
+              >{{ "deleteQuestionnaire" | translate }}</mat-radio-button
+            >
+          </li>
+        </ul>
+      </mat-radio-group>
+
+      <!-- {{ mode }} -->
+      <mat-spinner *ngIf="loadingQuestNames"></mat-spinner>
+      <div><button mat-button matStepperNext>{{ "next" | translate }}</button></div>
+    </form>
+  </mat-step>
+  <mat-step *ngIf="mode === 'edit' || mode === 'delete'" [completed]="questFetched">
+    <ng-template matStepLabel>{{ "choose" | translate }}</ng-template>
+    <h3 *ngIf="mode === 'edit'" >{{ "questToEdit" | translate }}</h3>
+    <h3 *ngIf="mode === 'delete'">{{ "questToDelete" | translate }}</h3>
+    <p>{{ "filterQuestNames" | translate }}</p>
+    <mat-spinner diameter="30" *ngIf="loadingQuestNames"></mat-spinner>
+    <mat-card *ngIf="!loadingQuestNames && (userIsAdmin || userIsEditor)" class="loadquests-card">
+      <mat-card-content>
+        <p>
+          {{ "showAllQuests" | translate }}
+        </p>
+      </mat-card-content>
+      <mat-slide-toggle name="showAllQuestNames" [(ngModel)]="showAllQuestNames" (change)="handleShowAllQuestNames($event)"> </mat-slide-toggle>
+    </mat-card>
+    
+    
+    <form [formGroup]="secondFormGroup" class="example-form">
+      <mat-form-field *ngIf="!loadingQuestNames" class="example-full-width">
+        <input
+          type="text"
+          placeholder="Pick one"
+          aria-label="Number"
+          matInput
+          [matAutocomplete]="auto"
+          formControlName="secondCtrl"
+          required
+        />
+        <mat-autocomplete
+          (optionSelected)="deleteOrGetQuestAction($event.option.value, stepper)"
+          #auto="matAutocomplete"
+        >
+          <mat-option
+            *ngFor="let option of (filteredOptions | async)"
+            [value]="option.viewValue"
+          >
+            {{ option.viewValue }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <div>
+        <mat-spinner diameter="30" *ngIf="loadingQuestData"></mat-spinner>
+        <button mat-button matStepperPrevious>{{ "back" | translate }}</button>
+        <button mat-button matStepperNext>{{ "next" | translate }}</button>
+        <!--
+          <button mat-button (click)="getQuestData(stepper)" [disabled]="!secondFormGroup.valid">Send</button>
+        -->
+        <!-- <button mat-button matStepperNext>Next</button> -->
+      </div>
+    </form>
+  </mat-step>
+  <mat-step *ngIf="mode !== 'delete'" >
+    <ng-template matStepLabel>{{ "language" | translate }}</ng-template>
+    <form [formGroup]="languageFormGroup">
+      
+      <div>
+          <h3>{{ "chooseLanguage" | translate }}</h3>
+          <p>{{ "saveLanguage" | translate }}</p>
+        <mat-form-field>
+          <mat-select
+            (selectionChange)="languageChange($event, true)"
+            placeholder="Languages"
+            formControlName="languagesSelectBox"
+            multiple
+          >
+            <mat-option *ngFor="let language of languages" [value]="language">{{
+              language.long
+            }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <h3>{{ "chooseDefaultLanguage" | translate }}</h3>
+        <mat-form-field>
+          <mat-select
+            placeholder="Languages"
+            formControlName="defaultLanguagesSelectBox"
+            (selectionChange)="emitFormValidStatus(); languageChange($event)"
+          >
+            <mat-option
+              *ngFor="let defaultLanguage of possibleDefaultLanguages"
+              [value]="defaultLanguage"
+            >
+              {{ defaultLanguage.long }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div></div>
+        <button mat-button matStepperPrevious>{{ "back" | translate }}</button>
+        <button mat-button [disabled]="(languageFormGroup.valid && !languageFormGroup.dirty) || (languageFormGroup.valid && !languageChanged)" (click)="setDefaultsInPossibleLanguages()">{{ "reset" | translate }} {{ "languages" | translate }}</button>
+        <button mat-button [disabled]="!languageFormGroup.valid || (languageFormGroup.valid && !languageFormGroup.dirty) || (languageFormGroup.valid && !languageChanged)" (click)="openDialog()">{{ "save" | translate }}</button>
+      </div>
+    </form>
+  </mat-step>
+</mat-stepper>

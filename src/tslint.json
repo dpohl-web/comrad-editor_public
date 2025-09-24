@@ -1,0 +1,39 @@
+{
+  "extends": "../tslint.json",
+  "rules": {
+    "member-ordering": [
+      true,
+      {
+        "order": ["public-static-field", "public-instance-field", "public-constructor", "private-static-field", "private-instance-field", "private-constructor"]
+      }
+    ],
+    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+    "directive-selector": [true, "attribute", "app", "camelCase"],
+    "component-selector": [true, "element", "app", "kebab-case"],
+    "indent": [true, "tabs", 2],
+    "max-line-length": [true, 132],
+    "no-console": {
+      "severity": "warning",
+      "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+    },
+    "unified-signatures": true,
+    "typedef": { "severity": "warning", "options": ["call-signature", "arrow-call-signature", "parameter", "property-declaration", "object-destructuring", "array-destructuring"]},
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ]
+  }
+}

@@ -1,0 +1,833 @@
+<ngx-ui-loader [fgsSize]="75" [fgsType]="spinner.cubeGrid"></ngx-ui-loader>
+<form *ngIf="mainForm" [formGroup]="mainForm">
+	<div formArrayName="categories">
+		<mat-accordion
+			multi="true"
+			cdkDropList
+        	#categoryList="cdkDropList"
+        	[cdkDropListData]="mainForm.value.categories"
+        	(cdkDropListDropped)="dropExpansion($event, categories, 'category')"
+			class="droplist-segement"
+		>
+			<div *ngFor="let oneCat of categories.controls; let i = index">
+				<!-- <mat-accordion multi="false"> -->
+				<div [formGroupName]="i">
+				<mat-expansion-panel
+					cdkDrag
+					[cdkDragDisabled]="(categoryExtensionPanelExpanded > -1) || i === 0"
+					disabled
+					[expanded]="categoryExtensionPanelExpanded === i"
+					(afterExpand)="expanded()"
+					[ngClass]="{'category-panel': true,  'drag-segement': true, 'drag-no-sort': i === 0}"
+					
+				>
+						<mat-expansion-panel-header (click)="togglePanel(i, $event)" class="category-header">
+							<mat-panel-title>{{ i ? ('category' | translate) : ('general' | translate) }}</mat-panel-title>
+							<mat-panel-description class="panel-description-full-width">
+								<input
+								*ngIf="i"
+								maxlength="255"
+								class="expansion-input"
+								(click)="clickOnHeaderInput($event)"
+								matInput
+								formControlName="identifier"
+								/>
+							</mat-panel-description>
+							<mat-icon class="disable-all-events" *ngIf="oneCat.invalid" color="warn">warning</mat-icon>
+							<span class="mat-expansion-indicator ng-trigger ng-trigger-indicatorRotate ng-star-inserted" [ngStyle]="{'transform': categoryExtensionPanelExpanded === i ? 'rotate(180deg)' : 'rotate(0deg)'}"></span>
+						</mat-expansion-panel-header>
+					<ng-template matExpansionPanelContent>
+							<div formGroupName="categoryName">
+								<!-- TODO: categoryNames getter always same category -->
+								<div
+									*ngFor="
+										let language of getCategoryNames(i).controls | keys;
+										let categoryNamesLanguageIndex = index
+									"
+								>
+									<mat-form-field class="example-full-width">
+										<input
+											matInput
+											placeholder="{{ possibleLanguages[language] }}: {{ language }} Category Name"
+											[formControlName]="language"
+											[errorStateMatcher]="matcher"
+											(keyup)="changeCategoryName(i, language, $event)"
+										/>
+										<mat-error> {{ 'questNameErrorMessage' | translate }} </mat-error>
+									</mat-form-field>
+									<!-- <input *ngFor="let language of languages" [formControlName]="language" [placeholder]="language" /> -->
+								</div>
+							</div>
+							<div *ngIf="oneCat.get('catcolor')">
+								<p>{{ 'chooseColor' | translate }}</p>
+								<input
+									[hidden]="true"
+									formControlName="catcolor"
+									[value]="oneCat.get('catcolor').value"
+									[style.background]="oneCat.get('catcolor').value"
+									[cpOKButton]="true"
+									[cpSaveClickOutside]="false"
+									[cpOKButtonClass]="'btn btn-primary btn-xs'"
+									[colorPicker]="oneCat.get('catcolor').value"
+									[cpOutputFormat]="'rgba'"
+									[cpAlphaChannel]="'disabled'"
+									[cpCancelButton]="true"
+									[cpCancelButtonClass]="'btn btn-secondary btn-xs'"
+									(colorPickerSelect)="colorChanged($event, 'catcolor', i)"
+									[(cpToggle)]="toggleCatColor[i]"
+								/>
+							</div>
+							<div
+								*ngIf="oneCat.get('catcolor')"
+								class="colorChooseButton"
+								[style.backgroundColor]="oneCat.get('catcolor').value"
+								(click)="toggleCatColor[i] = !toggleCatColor[i]"
+							>
+								<span>open</span>
+							</div>
+
+							<!--
+                <mat-form-field class="example-full-width">
+                  <input
+                    matInput
+                    placeholder="evaluateCategory"
+                    formControlName="evaluateCategory"
+                  />
+                </mat-form-field>
+              -->
+
+							<!-- <mat-slide-toggle *ngIf="i" formControlName="evaluateCategory" (change)="formTest()"> evaluate category? </mat-slide-toggle> -->
+							<mat-slide-toggle *ngIf="false" formControlName="evaluateCategory" (change)="formTest()">
+								evaluate category?
+							</mat-slide-toggle>
+							<div *ngIf="i && additionalBackendInfos.is_recommendations">
+								<mat-slide-toggle class="custom-mb" formControlName="recommendationsIsUsed">
+									{{ 'recommendationsIsUsed' | translate }}
+								</mat-slide-toggle>
+								
+								<div [hidden]="oneCat.get('recommendationsIsUsed').value === false">
+									<div *ngIf="isTypeOf(showRecommendationsRange[i], 'undefined') || showRecommendationsRange[i]">
+										<div class="hintbutton custom-ml" (click)="showHelp('helpTitle', 'addDeleteRangeDescription')">?</div>
+										<div class="custom-m">
+                                            <app-no-ui-slider [config]="recommendationsConfig[i]" (change)="changeRange($event, i)"></app-no-ui-slider>
+										</div>
+										<mat-action-row class="questform-range-add-delete">
+											<button [disabled]="recommendationsConfig[i].start.length > 8" mat-raised-button (click)="addRange(i)">+</button>
+											<button [disabled]="recommendationsConfig[i].start.length < 2" mat-raised-button (click)="deleteRange(i)">-</button>
+										</mat-action-row>
+										
+									</div>
+									
+									<!-- {{oneCat.get(['recommendationsGroup', 'recommendationsRanges']).value}} -->
+									<!-- recommendationsConfig[i].start: {{recommendationsConfig[i].start}}<br>
+									oneCat.get(['recommendationsGroup', 'recommendationsRanges']).value: {{oneCat.get(['recommendationsGroup', 'recommendationsRanges']).value}} -->
+								</div>
+								<div [hidden]="oneCat.get('recommendationsIsUsed').value === false" formGroupName="recommendationsGroup">
+									<div formArrayName="recommendationsContentArray">
+										<div *ngFor="let content of getRecommendationsContentArray(oneCat).controls; let recommendationsContentIndex = index">
+											<div [formGroupName]="recommendationsContentIndex">
+												
+												<div formGroupName="recommendationContent">
+													<div
+														*ngFor="
+															let recommendationContent of getRecommendationsContentArrayGroup(content).controls | keys;
+															let contentIndex = index
+														"
+													>
+														<!-- <mat-form-field class="example-full-width">
+					  <textarea matInput placeholder="{{recommendationContent}} Page Description" [formControlName]="recommendationContent"></textarea>
+					</mat-form-field> -->
+														<h4>
+															{{ 'insertRecommendation' | translate
+															}}{{ possibleLanguages[recommendationContent] }}
+														</h4>
+														<editor
+															[formControl]="getrecommendationContentControl(content, recommendationContent)"
+															[init]="tinyMceSettings"
+															maxlength="500000"
+                                                            licenseKey="gpl"
+														></editor>
+														<div
+															*ngIf="getRecommendationsContentArrayGroup(content).controls[recommendationContent].invalid"
+															class="tinymce-character-warning"
+														>
+															<mat-icon color="warn">warning</mat-icon>
+															<span>{{ 'tinymceCharacterWaring' | translate }}</span>
+															<mat-icon color="warn">warning</mat-icon>
+														</div>
+													</div>
+												</div>
+												<mat-slide-toggle (change)="changeRangeConnect($event, i, recommendationsContentIndex, oneCat)" class="custom-mb" formControlName="isActive">
+													{{ 'rangeIsUsed' | translate }}
+												</mat-slide-toggle>
+											</div>
+											
+										</div>
+
+									</div>
+								</div>
+							</div>
+							
+							<!-- <input formControlName="evaluateCategory" placeholder="Item name" /> -->
+							<div formArrayName="categoryPages">
+								<mat-accordion
+									multi="false"
+									cdkDropList
+									#pageList="cdkDropList"
+									[cdkDropListData]="getCategoryPages(i).value"
+									(cdkDropListDropped)="dropExpansion($event, getCategoryPages(i))"
+									class="droplist-segement"
+								>
+									<div *ngFor="let onePage of getCategoryPages(i).controls; let onePageIndex = index">
+										<div [formGroupName]="onePageIndex">
+										<mat-expansion-panel
+											cdkDrag
+											[cdkDragDisabled]="(categoryPageExtensionPanelExpanded !== '-1')"
+											disabled
+											[expanded]="categoryPageExtensionPanelExpanded === i + '_' + onePageIndex"
+											(afterExpand)="expanded()"
+											class="page-panel drag-segement">
+											<mat-expansion-panel-header (click)="togglePanel(i, $event, onePageIndex)" class="page-panel__header">
+												<mat-panel-title>{{ 'page' | translate }}</mat-panel-title>
+												<mat-panel-description class="panel-description-full-width">
+													<input
+													maxlength="255"
+													class="expansion-input"
+													(click)="clickOnHeaderInput($event)"
+													matInput
+													formControlName="identifier"
+													/>
+												</mat-panel-description>
+												<mat-icon *ngIf="onePage.invalid" color="warn">warning</mat-icon>
+												<span class="mat-expansion-indicator ng-trigger ng-trigger-indicatorRotate ng-star-inserted" [ngStyle]="{'transform': categoryPageExtensionPanelExpanded === i + '_' + onePageIndex ? 'rotate(180deg)' : 'rotate(0deg)'}"></span>
+											</mat-expansion-panel-header>
+											<ng-template matExpansionPanelContent>
+												
+													<!--
+                            <mat-form-field class="example-full-width">
+                              <input
+                                matInput
+                                placeholder="should evaluate?"
+                                formControlName="pageEvaluate"
+                              />
+                            </mat-form-field>
+                          -->
+													<!-- <mat-slide-toggle *ngIf="i" formControlName="pageEvaluate"> evaluate page? </mat-slide-toggle> -->
+													<mat-slide-toggle *ngIf="false" formControlName="pageEvaluate">
+														evaluate page?
+													</mat-slide-toggle>
+
+													<div formGroupName="pageInformations">
+														<h3>{{ 'pageInformationDescription' | translate }}</h3>
+
+														<mat-slide-toggle formControlName="showPageInformations">{{
+															'showPageInformations' | translate
+														}}</mat-slide-toggle>
+														<div [hidden]="!onePage.value.pageInformations.showPageInformations">
+															<h4>{{ 'pageInformationBeforeOrAfter' | translate }}</h4>
+															<div formGroupName="@attributes">
+																<div
+																	*ngFor="
+																		let pagesInformationsAttributesKey of getCategoryPagesInformationsProperties(
+																			i,
+																			onePageIndex,
+																			'@attributes'
+																		).controls | keys;
+																		let pagesInformationsAttributesIndex = index
+																	"
+																>
+																	<mat-form-field>
+																		<mat-select
+																			placeholder="position"
+																			[formControlName]="pagesInformationsAttributesKey"
+																		>
+																			<mat-option
+																				*ngFor="
+																					let attributeType of attributes[
+																						pagesInformationsAttributesKey
+																					]
+																				"
+																				[value]="attributeType.value"
+																			>
+																				{{ attributeType.viewValue }}
+																			</mat-option>
+																		</mat-select>
+																	</mat-form-field>
+																</div>
+															</div>
+															<div formGroupName="pageInformationsSubtitle">
+																<div
+																	*ngFor="
+																		let pageInformationsSubtitle of getCategoryPagesInformationsProperties(
+																			i,
+																			onePageIndex,
+																			'pageInformationsSubtitle'
+																		).controls | keys;
+																		let pageInformationsSubtitleIndex = index
+																	"
+																>
+																	<mat-form-field class="example-full-width">
+																		<textarea
+																			matInput
+																			placeholder="{{
+																				possibleLanguages[pageInformationsSubtitle]
+																			}}: pageInformationsSubtitle"
+																			[formControlName]="pageInformationsSubtitle"
+																			[errorStateMatcher]="matcher"
+																		></textarea>
+																	</mat-form-field>
+																</div>
+															</div>
+															<div formGroupName="pageInformationsDescription">
+																<h4>{{ 'resultDescriptionImages' | translate }}</h4>
+																<div
+																	*ngFor="
+																		let pageInformationsDescription of getCategoryPagesInformationsProperties(
+																			i,
+																			onePageIndex,
+																			'pageInformationsDescription'
+																		).controls | keys;
+																		let pageInformationsDescriptionIndex = index
+																	"
+																>
+																	<!-- <mat-form-field class="example-full-width">
+                                  <textarea matInput placeholder="{{pageInformationsDescription}} Page Description" [formControlName]="pageInformationsDescription"></textarea>
+                                </mat-form-field> -->
+																	<h4>
+																		{{ 'insertPageInfos' | translate
+																		}}{{ possibleLanguages[pageInformationsDescription] }}
+																	</h4>
+																	<editor
+																		[formControl]="
+																			getCategoryPagesInformationsPropertiesControl(
+																				i,
+																				onePageIndex,
+																				'pageInformationsDescription',
+                                                                                pageInformationsDescription
+																			)
+																		"
+																		[init]="tinyMceSettings"
+																		maxlength="500000"
+																	></editor>
+																	<div
+																		*ngIf="
+																			getCategoryPagesInformationsProperties(
+																				i,
+																				onePageIndex,
+																				'pageInformationsDescription'
+																			).controls[pageInformationsDescription].invalid
+																		"
+																		class="tinymce-character-warning"
+																	>
+																		<mat-icon color="warn">warning</mat-icon>
+																		<span>{{ 'tinymceCharacterWaring' | translate }}</span>
+																		<mat-icon color="warn">warning</mat-icon>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div formArrayName="blocks">
+														<mat-accordion
+															multi="true"
+															cdkDropList
+															#blockList="cdkDropList"
+															[cdkDropListData]="getCategoryPagesBlocksProperties(
+																i,
+																onePageIndex
+															).value"
+															(cdkDropListDropped)="dropExpansion($event, getCategoryPagesBlocksProperties(i,onePageIndex))"
+															class="droplist-segement"
+														>
+															<div
+																*ngFor="
+																	let oneBlock of getCategoryPagesBlocksProperties(
+																		i,
+																		onePageIndex
+																	).controls;
+																	let oneBlockIndex = index
+																"
+															>
+																<div [formGroupName]="oneBlockIndex">
+																<mat-expansion-panel
+																	#blockExpansionPanel
+																	cdkDrag
+																	[cdkDragDisabled]="blockExpansionPanel.expanded"
+																	class="block-panel drag-segement"
+																>
+																	<mat-expansion-panel-header class="block-panel__header">
+																		<mat-panel-title>{{ 'block' | translate }}</mat-panel-title>
+																		<mat-panel-description class="panel-description-full-width">
+																			<input
+																			maxlength="255"
+																			class="expansion-input"
+																			(click)="clickOnHeaderInput($event)"
+																			matInput
+																			formControlName="identifier"
+																			/>
+																		</mat-panel-description>
+																		<mat-icon *ngIf="oneBlock.invalid" color="warn"
+																			>warning</mat-icon
+																		>
+																	</mat-expansion-panel-header>
+																	<ng-template matExpansionPanelContent>
+																		
+																			<h3>{{ 'whatIsBlock' | translate }}</h3>
+																			<h4>{{ 'whichInputType' | translate }}</h4>
+																			<div formGroupName="@attributes">
+																				<div
+																					*ngFor="
+																						let blockAttribute of getCategoryPagesBlocksAttributes(
+																							i,
+																							onePageIndex,
+																							oneBlockIndex
+																						).controls | keys;
+																						let blockAttributeIndex = index
+																					"
+																				>
+																					<mat-form-field>
+																						<mat-select
+																							placeholder="controll type"
+																							[formControlName]="blockAttribute"
+																							(selectionChange)="
+																								inputTypeChange(
+																									$event,
+																									i,
+																									onePageIndex,
+																									oneBlockIndex
+																								)
+																							"
+																						>
+																							<ng-container
+																								*ngFor="
+																									let attributeType of attributes[
+																										blockAttribute
+																									]
+																								"
+																							>
+																								<mat-option
+																									*ngIf="
+																										i === 0 ||
+																										attributeType.value !==
+																											'input'
+																									"
+																									[value]="attributeType.value"
+																								>
+																									{{ attributeType.viewValue }}
+																								</mat-option>
+																							</ng-container>
+																						</mat-select>
+																					</mat-form-field>
+
+																					<!--
+                                            <mat-form-field class="example-full-width">
+                                              <input matInput placeholder="{{blockAttribute}}" [formControlName]="blockAttribute" />
+                                            </mat-form-field>
+                                          -->
+																				</div>
+																			</div>
+																			<h4>{{ 'whatQuestion' | translate }}</h4>
+																			<div formGroupName="blockQuestion">
+																				<div
+																					*ngFor="
+																						let blockQuestionKey of getCategoryPagesBlocksProperties(
+																							i,
+																							onePageIndex,
+																							oneBlockIndex,
+																							true
+																						).controls | keys;
+																						let blockAttributeIndex = index
+																					"
+																				>
+																					<mat-form-field class="example-full-width">
+																						<textarea
+																							matInput
+																							placeholder="{{
+																								possibleLanguages[blockQuestionKey]
+																							}}: blockQuestion"
+																							[formControlName]="blockQuestionKey"
+																							[errorStateMatcher]="matcher"
+																						></textarea>
+																					</mat-form-field>
+																				</div>
+																			</div>
+																			<div [hidden]="i === 0">
+																				<h4>{{ 'whatShortQuestion' | translate }}</h4>
+																				<div formGroupName="blockShortQuestion">
+																					<div
+																						*ngFor="
+																							let blockShortQuestionKey of getCategoryPagesBlocksProperties(
+																								i,
+																								onePageIndex,
+																								oneBlockIndex,
+																								false,
+																								undefined,
+																								false,
+																								undefined,
+																								false,
+																								true
+																							).controls | keys;
+																							let blockShortQuestionIndex = index
+																						"
+																					>
+																						<mat-form-field class="example-full-width">
+																							<input
+																								matInput
+																								placeholder="{{
+																									possibleLanguages[
+																										blockShortQuestionKey
+																									]
+																								}}: short question"
+																								[formControlName]="
+																									blockShortQuestionKey
+																								"
+																								[errorStateMatcher]="matcher"
+																								maxlength="40"
+																							/>
+																							<mat-error>
+																								{{
+																									'tinymceLessCharacter'
+																										| translate
+																								}}
+																							</mat-error>
+																							<mat-hint align="end"
+																								>{{
+																									getBlockPropValueLength(
+																										i,
+																										onePageIndex,
+																										oneBlockIndex,
+																										blockShortQuestionKey
+																									)
+																								}}
+																								/ 40</mat-hint
+																							>
+																						</mat-form-field>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div
+																				*ngIf="
+																					oneBlock.value['@attributes'].type ===
+																						'radio' ||
+																					oneBlock.value['@attributes'].type === 'check'
+																				"
+																				formArrayName="blockAnswers"
+																			>
+																				<mat-accordion
+																					multi="true"
+																					cdkDropList
+																					#answerList="cdkDropList"
+																					[cdkDropListData]="getCategoryPagesBlocksProperties(
+																						i,
+																						onePageIndex,
+																						oneBlockIndex,
+																						null,
+																						null,
+																						true
+																					).value"
+																					(cdkDropListDropped)="dropExpansion($event, getCategoryPagesBlocksProperties(
+																						i,
+																						onePageIndex,
+																						oneBlockIndex,
+																						null,
+																						null,
+																						true
+																					))"
+																					class="droplist-segement"
+																				>
+																					<div
+																						*ngFor="
+																							let blockAnswer of getCategoryPagesBlocksProperties(
+																								i,
+																								onePageIndex,
+																								oneBlockIndex,
+																								null,
+																								null,
+																								true
+																							).controls;
+																							let blockAnswerIndex = index
+																						"
+																					>
+																					<div
+																					[formGroupName]="
+																						blockAnswerIndex
+																					"
+																					>
+																						<mat-expansion-panel
+																							#answerExpansionPanel
+																							cdkDrag
+																							[cdkDragDisabled]="answerExpansionPanel.expanded"
+																							class="answer-panel drag-segement"
+																						>
+																							<mat-expansion-panel-header
+																								class="answer-panel__header"
+																							>
+																								<mat-panel-title>{{
+																									'answer' | translate
+																								}}</mat-panel-title>
+																								<mat-panel-description class="panel-description-full-width">
+																									<input
+																									maxlength="255"
+																									class="expansion-input"
+																									(click)="clickOnHeaderInput($event)"
+																									matInput
+																									formControlName="identifier"
+																									/>
+																								</mat-panel-description>
+																								<mat-icon
+																									*ngIf="blockAnswer.invalid"
+																									color="warn"
+																									>warning</mat-icon
+																								>
+																							</mat-expansion-panel-header>
+																							<ng-template matExpansionPanelContent>
+																									<h4>
+																										{{
+																											'fillAnswers'
+																												| translate
+																										}}
+																									</h4>
+																									<div
+																										formGroupName="blockAnswer"
+																									>
+																										<div
+																											*ngFor="
+																												let oneAnswerKey of getCategoryPagesBlocksProperties(
+																													i,
+																													onePageIndex,
+																													oneBlockIndex,
+																													null,
+																													null,
+																													null,
+																													blockAnswerIndex,
+																													true
+																												).controls | keys;
+																												let oneAnswerIndex = index
+																											"
+																										>
+																											<mat-form-field
+																												class="example-full-width"
+																											>
+																												<textarea
+																													matInput
+																													placeholder="{{
+																														possibleLanguages[
+																															oneAnswerKey
+																														]
+																													}}: oneAnswer"
+																													[formControlName]="
+																														oneAnswerKey
+																													"
+																													[errorStateMatcher]="
+																														matcher
+																													"
+																												></textarea>
+																											</mat-form-field>
+
+																											<!--
+                                                        <mat-form-field class="example-full-width">
+                                                          <input matInput placeholder="{{blockAttribute}}" [formControlName]="blockAttribute" />
+                                                        </mat-form-field>
+                                                      -->
+																										</div>
+																									</div>
+																									<h4>
+																										{{
+																											'whichValue' | translate
+																										}}
+																									</h4>
+																									<mat-form-field>
+																										<mat-select
+																											placeholder="value"
+																											formControlName="answerValue"
+																										>
+																											<mat-option
+																												*ngFor="
+																													let attributeType of attributes[
+																														'values'
+																													]
+																												"
+																												[value]="
+																													attributeType.value
+																												"
+																											>
+																												{{
+																													attributeType.viewValue
+																												}}
+																											</mat-option>
+																										</mat-select>
+																									</mat-form-field>
+																								<mat-action-row>
+																									<button
+																										*ngIf="
+																											getCategoryPagesBlocksProperties(
+																												i,
+																												onePageIndex,
+																												oneBlockIndex,
+																												null,
+																												null,
+																												true
+																											).controls.length !== 1
+																										"
+																										mat-raised-button
+																										(click)="
+																											deleteSegment(
+																												i,
+																												onePageIndex,
+																												oneBlockIndex,
+																												blockAnswerIndex
+																											)
+																										"
+																									>
+																										{{ 'delete' | translate }}
+																										{{
+																											'oneAnswer'
+																												| translate
+																												| lowercase
+																										}}
+																									</button>
+																									<button
+																										mat-raised-button
+																										(click)="
+																											addAnswerControl(
+																												i,
+																												onePageIndex,
+																												oneBlockIndex,
+																												blockAnswerIndex
+																											)
+																										"
+																									>
+																										{{ 'add' | translate }}
+																										{{
+																											'oneAnswer'
+																												| translate
+																												| lowercase
+																										}}
+																									</button>
+																								</mat-action-row>
+																							</ng-template>
+																						</mat-expansion-panel>
+																						</div>
+																					</div>
+																				</mat-accordion>
+																			</div>
+																			<!-- create min and max answer for input range -->
+																			<div
+																				*ngIf="
+																					oneBlock.value['@attributes'].type ===
+																					'inputrange'
+																				"
+																				formArrayName="blockAnswers"
+																			>
+																				<div [formGroupName]="0">
+																					<h4>
+																						{{ 'whichValueForMin' | translate }}
+																					</h4>
+																					<mat-form-field>
+																						<mat-select
+																							placeholder="value"
+																							formControlName="answerValue"
+																						>
+																							<mat-option
+																								*ngFor="
+																									let attributeType of attributes[
+																										'values'
+																									]
+																								"
+																								[value]="attributeType.value"
+																							>
+																								{{ attributeType.viewValue }}
+																							</mat-option>
+																						</mat-select>
+																					</mat-form-field>
+																				</div>
+																				<div [formGroupName]="1">
+																					<h4>
+																						{{ 'whichValueForMax' | translate }}
+																					</h4>
+																					<mat-form-field>
+																						<mat-select
+																							placeholder="value"
+																							formControlName="answerValue"
+																						>
+																							<mat-option
+																								*ngFor="
+																									let attributeType of attributes[
+																										'values'
+																									]
+																								"
+																								[value]="attributeType.value"
+																							>
+																								{{ attributeType.viewValue }}
+																							</mat-option>
+																						</mat-select>
+																					</mat-form-field>
+																				</div>
+																			</div>
+																		<mat-action-row>
+																			<button
+																				*ngIf="
+																					getCategoryPagesBlocksProperties(
+																						i,
+																						onePageIndex
+																					).controls.length !== 1
+																				"
+																				mat-raised-button
+																				(click)="
+																					deleteSegment(i, onePageIndex, oneBlockIndex)
+																				"
+																			>
+																				{{ 'delete' | translate }}
+																				{{ 'block' | translate | lowercase }}
+																			</button>
+																			<button
+																				mat-raised-button
+																				(click)="
+																					addBlockControl(i, onePageIndex, oneBlockIndex)
+																				"
+																			>
+																				{{ 'add' | translate }}
+																				{{ 'block' | translate | lowercase }}
+																			</button>
+																		</mat-action-row>
+																	</ng-template>
+																</mat-expansion-panel>
+																</div>
+															</div>
+														</mat-accordion>
+													</div>
+												<mat-action-row>
+													<button mat-raised-button (click)="addPageControl(i, onePageIndex)">
+														{{ 'add' | translate }} {{ 'page' | translate | lowercase }}
+													</button>
+													<button
+														*ngIf="getCategoryPages(i).controls.length !== 1"
+														mat-raised-button
+														(click)="deleteSegment(i, onePageIndex)"
+													>
+														{{ 'delete' | translate }} {{ 'page' | translate | lowercase }}
+													</button>
+												</mat-action-row>
+											</ng-template>
+										</mat-expansion-panel>
+										</div>
+									</div>
+								</mat-accordion>
+							</div>
+						<mat-action-row>
+							<button *ngIf="i" mat-raised-button (click)="deleteSegment(i)">
+								{{ 'delete' | translate }} {{ 'category' | translate | lowercase }}
+							</button>
+							<button mat-raised-button (click)="addCatControl(i)">
+								{{ 'add' | translate }} {{ 'category' | translate | lowercase }}
+							</button>
+						</mat-action-row>
+					</ng-template>
+				</mat-expansion-panel>
+			</div>
+			</div>
+		</mat-accordion>
+	</div>
+</form>

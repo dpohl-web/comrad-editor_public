@@ -1,0 +1,190 @@
+@use '@angular/material' as mat;
+@import "src/variables.scss";
+
+// mixin name will be used in main style.scss
+@mixin questform-component-theme($theme) {
+  // retrieve variables from theme
+  // (all possible variables, use only what you really need)
+//   $primary: map-get($theme, primary);
+//   $accent: map-get($theme, accent);
+//   $warn: map-get($theme, warn);
+//   $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+
+
+  // all of these variables contain many additional variables
+
+  //   big-input {
+
+  //     input {
+
+  //       // retrieve particular color from variable, rg: text, base, divider, ...
+  //       color: mat-color($foreground, text);
+  //       background-color: mat-color($background, card);
+
+  //       // or use "default" subvariable by default, oh the puns :)
+  //       border: 1px solid mat-color($accent);
+  //     }
+  //   }
+
+  //   .divback {
+  //     background-color: mat-color($accent, lighter);
+  //   }
+
+//   app-quest-form .mat-accordion .category-header {
+//     background: $cat-background--light;
+//   }
+
+//   app-quest-form .mat-accordion .category-header.mat-expanded,
+//   app-quest-form .mat-accordion .category-header.mat-expanded:hover {
+//     background: $cat-background;
+//   }
+
+  app-quest-form {
+    .mat-accordion {
+
+        .mat-expansion-panel-header-description {
+            > .mat-mdc-input-element {
+                width: 100%;
+            }
+        }        
+        .category-header {
+            background: $cat-background--light;
+
+            &:not([aria-disabled='true']):hover,
+            &:not(.mat-expanded):hover {
+                background: $cat-background !important;
+            }
+
+            &.mat-expanded {
+                background: $cat-background;
+
+                &:hover {
+                    background: $cat-background;
+                }
+            }
+
+            
+
+
+        }
+        .category-panel {
+            > .mat-expansion-panel-content {
+
+                .mat-expansion-panel-body {
+                    background: $cat-background--light;
+
+                    > div {
+                        background-color: mat.m2-get-color-from-palette($background, card);
+                    }
+                }
+            }
+        }
+
+
+        .page-panel__header {
+            background: $page-background--light;
+
+            &:not([aria-disabled='true']):hover,
+            &:not(.mat-expanded):hover {
+                background: $page-background !important;
+            }
+
+            &.mat-expanded {
+                background: $page-background;
+
+                &:hover {
+                    background: $page-background;
+                }
+            }
+
+            
+
+
+        }
+        .page-panel {
+            > .mat-expansion-panel-content {
+
+                .mat-expansion-panel-body {
+                    background: $page-background--light;
+
+                    > div {
+                        background-color: mat.m2-get-color-from-palette($background, card);
+                    }
+                }
+            }
+        }
+
+
+        .block-panel__header {
+            background: $block-background--light;
+
+            &:not([aria-disabled='true']):hover,
+            &:not(.mat-expanded):hover {
+                background: $block-background !important;
+            }
+
+            &.mat-expanded {
+                background: $block-background;
+
+                &:hover {
+                    background: $block-background;
+                }
+            }
+
+            
+
+
+        }
+        .block-panel {
+            > .mat-expansion-panel-content {
+
+                .mat-expansion-panel-body {
+                    background: $block-background--light;
+
+                    > div {
+                        background-color: mat.m2-get-color-from-palette($background, card);
+                    }
+                }
+            }
+        }
+
+
+        .answer-panel__header {
+            background: $answer-background--light;
+
+            &:not([aria-disabled='true']):hover,
+            &:not(.mat-expanded):hover {
+                background: $answer-background !important;
+            }
+
+            &.mat-expanded {
+                background: $answer-background;
+
+                &:hover {
+                    background: $answer-background;
+                }
+            }
+
+            
+
+
+        }
+        .answer-panel {
+            > .mat-expansion-panel-content {
+
+                .mat-expansion-panel-body {
+                    background: $answer-background--light;
+
+                    > div {
+                        background-color: mat.m2-get-color-from-palette($background, card);
+                    }
+                }
+            }
+        }
+        
+        
+    }
+  }
+}

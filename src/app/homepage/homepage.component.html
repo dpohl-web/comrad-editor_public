@@ -1,0 +1,67 @@
+<mat-accordion class="home-accordion" multi="false">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ "generalExpansion" | translate }}</mat-panel-title>
+      <mat-panel-description>
+        {{ "generalExpansionDesc" | translate }}
+      </mat-panel-description>
+      <mat-icon *ngIf="!allFormsStatus.language" color="warn">warning</mat-icon>
+    </mat-expansion-panel-header>
+    <app-general (initialisedFormToParentComponent)="canDeactivateFormGroupSetter($event)" (modeChanged)="areChildFormsDirty()"></app-general>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="headerDisabled">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ "headerExpansion" | translate }}</mat-panel-title>
+      <mat-panel-description>
+        {{ "headerExpansionDesc" | translate }}
+      </mat-panel-description>
+      <mat-icon *ngIf="!allFormsStatus.header" color="warn">warning</mat-icon>
+    </mat-expansion-panel-header>
+    <app-quest-header (initialisedFormToParentComponent)="canDeactivateFormGroupSetter($event)"></app-quest-header>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="mainDisabled">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ "formExpansion" | translate }}</mat-panel-title>
+      <mat-panel-description>
+        {{ "formExpansionDesc" | translate }}
+      </mat-panel-description>
+      <mat-icon *ngIf="!allFormsStatus.main" color="warn">warning</mat-icon>
+    </mat-expansion-panel-header>
+    <app-quest-form (initialisedFormToParentComponent)="canDeactivateFormGroupSetter($event)"></app-quest-form>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="footerDisabled">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ "footerExpansion" | translate }}</mat-panel-title>
+      <mat-panel-description>
+        {{ "footerExpansionDesc" | translate }}
+      </mat-panel-description>
+      <mat-icon *ngIf="!allFormsStatus.footer" color="warn">warning</mat-icon>
+    </mat-expansion-panel-header>
+    <app-footer (initialisedFormToParentComponent)="canDeactivateFormGroupSetter($event)"></app-footer>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="resultDisabled">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ "resultExpansion" | translate }}</mat-panel-title>
+      <mat-panel-description>
+        {{ "resultExpansionDesc" | translate }}
+      </mat-panel-description>
+      <mat-icon *ngIf="!allFormsStatus.result" color="warn">warning</mat-icon>
+    </mat-expansion-panel-header>
+    <app-quest-result (initialisedFormToParentComponent)="canDeactivateFormGroupSetter($event)"></app-quest-result>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [disabled]="finishDisabled">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{ "finishExpansion" | translate }}</mat-panel-title>
+      <mat-panel-description>
+        {{ "finishExpansionDesc" | translate }}
+      </mat-panel-description>
+      <mat-icon *ngIf="!allFormsStatus.finish" color="warn">warning</mat-icon>
+    </mat-expansion-panel-header>
+    <app-finish (initialisedFormToParentComponent)="canDeactivateFormGroupSetter($event)"></app-finish>
+  </mat-expansion-panel>
+</mat-accordion>

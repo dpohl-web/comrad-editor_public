@@ -1,0 +1,23 @@
+//variables
+$base-size: 5px;
+$spacing--tiny: $base-size;
+$spacing--small: $base-size * 2;
+$spacing--medium: $base-size * 3;
+$spacing--large: $base-size * 5;
+
+$cat-background: #81C784;
+$page-background: #e59596;
+$block-background: #89b0ab;
+$answer-background: #d6b0ad;
+$orange-warning: #ff9447;
+$green: #008600;
+
+$cat-background--light: lighten($cat-background, 20%);
+$page-background--light: lighten($page-background, 20%);
+$block-background--light: lighten($block-background, 20%);
+$answer-background--light: lighten($answer-background, 20%);
+
+$green--dark: darken($green, 10%);
+
+//buttons:
+$button-height: 60px;

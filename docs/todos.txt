@@ -1,0 +1,15 @@
+- if choose radar, we need at least 2 cats and at least 2 questions per cat.
+
+- reset radio buttons after selection
+
+
+Files in the project using legacy Material components:
+     - /src/app/connector.service.ts
+     - /src/app/material.module.ts
+     - /src/app/finish/finish.component.ts
+     - /src/app/footer/footer.component.ts
+     - /src/app/general/general.component.ts
+     - /src/app/language-modal/language-modal.component.ts
+     - /src/app/quest-form/quest-form.component.ts
+     - /src/app/quest-header/quest-header.component.ts
+

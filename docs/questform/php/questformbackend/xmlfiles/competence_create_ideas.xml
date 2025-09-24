@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <config>
+    <language>
+      <default>en</default>
+      <languages>
+        <short>en</short>
+        <long>English</long>
+      </languages>
+    </language>
+    <graphs>
+      <default>radar</default>
+      <showGraphSwitch>0</showGraphSwitch>
+      <graphSwitchOptions>
+        <options>radar</options>
+        <options>doughnut</options>
+        <options>polar</options>
+        <options>ownbar</options>
+        <options>bar</options>
+      </graphSwitchOptions>
+    </graphs>
+    <showHeaderButton>1</showHeaderButton>
+    <mainColors>
+      <primaryColor>rgb(70,120,175)</primaryColor>
+      <secondaryColor>rgb(200,94,94)</secondaryColor>
+    </mainColors>
+    <questionnaireFileName>competence_create_ideas</questionnaireFileName>
+  </config>
+  <head>
+    <title>
+      <en>Your Competence to create ideas and opportunities</en>
+    </title>
+    <button>
+      <text>
+        <en>mahara</en>
+      </text>
+      <link>http://mahara.learningrebus.net/group/view.php?id=47</link>
+    </button>
+    <logo>
+      <showLogo>0</showLogo>
+      <url>https://reveal-eu.org/wp-admin/upload.php?item=3855</url>
+    </logo>
+    <backgroundImage>
+      <showBackgroundImage>0</showBackgroundImage>
+      <backgroundUrl>https://path_to_wordpress_media_file</backgroundUrl>
+    </backgroundImage>
+  </head>
+  <categories>
+    <categoryName>
+      <en>Self-assessment exercise on your Competence to create ideas and opportunities:</en>
+    </categoryName>
+    <evaluateCategory>0</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="after">
+        
+        <showPageInformations>1</showPageInformations>
+        <pageInformationsDescription>
+          <en>&lt;p&gt;In the following we present to you a number of statements which may reveal your level of competence. The whole questionnaire is consisting of 5 areas with 2-5 questions each. &lt;/p&gt;&lt;p&gt;They are ordered &lt;strong&gt;along a competence progression&lt;/strong&gt; and they are based on the EntreComp system.&lt;/p&gt;&lt;p&gt;Please tick the boxes behind the statements that you maximum agree to (or that you feel secure to answer with &amp;ldquo;yes &amp;ndash; I agee!&amp;rdquo;). You may only tick only ONE box per question.&lt;/p&gt;&lt;p&gt;After accomplishing the questions you receive a visual overview of your competences (conpetence spide).&lt;/p&gt;</en>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en>Hello!</en>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="input">
+        
+        <blockQuestion>
+          <en>Please enter your name</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en/>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>0</pageEvaluate>
+    </categoryPages>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Spotting opportunities</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Identify, create and seize opportunities</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that looking for opportunities is vital for start-ups in the CCE sector</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can recognise opportunities to create value in my community and surroundings relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can explain what makes an opportunity to create value in the CCE</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can describe different analytical approaches to identify entrepreneurial opportunities in the CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can judge complex opportunities for creating value and decide whether to follow these up at different levels of the system I am working in (for example, micro, meso or macro) in the IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Focus on challenges</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have encountered challenges in my private and professional environment relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can recognise challenges in my community and surroundings relating to CCE and IBCM that I can contribute to solving</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can redefine the description of a challenge relating to CCE and IBCM, so that alternative opportunities address it may become apparent</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can judge the right time to take an opportunity to create value in regard to multifaceted challenges relating to CCE / IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>In the field of CCE and IBCM I can cluster different opportunities or identify synergies among different opportunities to make the most out of them</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Uncover needs</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I understand that different societal needs are drivers for innovation and taking action relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can identify needs in my community and surroundings that have not been met in CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can explain that and how different groups may have different needs in CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can carry out a needs analysis involving relevant stake-holders relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can design projects which aim to anticipate future needs relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Analyse the context</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am aware that there are different stakeholders who influence sustainable development in my region</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can recognise and explain different roles the public, private and third sectors play regarding sustainable development in my region or country</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can tell the difference between contexts for creating value (e.g., communities and informal networks, existing organisations, the market) in relation to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can identify the contextual boundaries of the system that are relevant to my (or my team's) value-creating activity in the context of CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can monitor relevant trends in CCE and IBCM and see how they create threats and new opportunities to create value</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(187,84,45)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Creating ideas</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Being Curious</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can show that I am curious about new things relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can experiment with my skills and competences in situations relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can actively search for new solutions that meet my needs relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can actively search for new solutions that improve the value-creating process in CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can combine my understanding of different contexts to transfer knowledge, ideas and solutions relating to CCE and IBCM across different areas that are connected to my value creating ideas and projects</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Developing Ideas</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that idea creation is a fundamental activity in the entrepreneurial process relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can develop ideas that solve problems that are relevant in CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can experiment with different techniques to generate alternative solutions to problems, using available resources in an effective way relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can test the value of my solutions with end users and stakeholders relevant for CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can tailor a variety of ways of involving stakeholders to suit the needs of my value-creating activity in CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Defining Problems</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that problem-solving is an important aspect of entrepreneurship</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can approach open-ended problems relating to CCE and IBCM (problems with many solutions) with curiosity</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can take part in team-sessions aiming at defining open-ended problems relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can describe and explain different approaches to shaping open-ended problems and different problem-solving strategies relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can use a mix of creative techniques and strategies to keep generating value over time to solve multifaceted problems in CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Designing Values</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I understand that the value of certain things depend on the own situation and the context</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can assemble objects relating to CCE and IBCM that create value for me and others</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can identify the basic functions that a prototype should have to illustrate the value of my idea relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can create (alone or with others) products or services that solve my problems and my needs in regard to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can apply different design approaches to create value through new products, processes or services in regard to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Being Innovative</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have a basic idea what innovation relating to CCE and IBCM is and that it is of vital importance for entrepreneurial activities</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can find and name examples of innovative products, services and solutions relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can differentiate different kinds of innovation. I can judge if an idea, product or process is innovative or just new to me relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can describe different levels of innovation (e.g incremental, breakthrough or transformational) and their role in value-creating activities relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can manage innovation processes relating to CCE and IBCM that respond to emerging needs and make the most of opportunities as they become available</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(218,22,22)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Visioning</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Imagine</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I sometimes imagine how my future (private/professional) life and my community and surroundings may look like relating to aspects of CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can develop simple future scenarios where value is created for my community and surroundings relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can build future scenarios around my value-creating activity relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can use my understanding of the context to identify different strategic visions for creating value in the CCE and regarding to IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can develop (alone or with others) and compare different future scenarios relating to CCE and IBCM based on concrete implementation scenarios in my region</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Think strategically</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have a general idea what strategic thinking is</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can explain what a vision is and what purpose it serves</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am aware of what is needed to build a vision in regard to to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can prepare a vision statement for my (or my team's) value-creating activity that guides internal decision-making throughout the whole process of creating value relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can plan backwards from my vision relating to CCE and IBCM to design the necessary strategy to achieve it</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Guide action</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that entrepreneurs transfer ideas into action</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can decide what type of vision for creating value I would like to contribute to relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can identify the changes and the actions needed to achieve my vision relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can promote initiatives for change and transformation that contribute to my vision relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can identify challenges related to my (or my team's) vision relating to CCE and IBCM, while respecting the different levels of the system and the variety of stakeholders affected. I am able to create a roadmap to achieve my vision</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(80,122,55)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Valuing ideas</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Recognise the value of ideas</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I understand that the value of certain things depend on the own situation and the context</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can find examples of ideas that have value for myself and others. I can tell the difference between social, cultural and economic value relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can decide which type of value relating to CCE and IBCM I want to act on and then choose the most appropriate pathway to do so</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can break down a value chain relating to CCE and IBCM into its different parts and identify how value is added in each part</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can develop strategies to effectively make the most of opportunities to create value in my organisation or venture relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Share and protect ideas</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that ideas and concepts of others are their Intellectual Property</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can explain that ideas can be shared and circulated for the benefit of every-one or can be protected by certain rights, for example, copyrights or patents regarding CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can tell the difference between types of licences that can be used to share ideas and protect rights relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can tell the difference between trademarks, registered design rights, patents, geographical indications, trade secrets, confidentiality agreements and copyright licences, including open, public-domain licences such as creative commons</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>When creating ideas with others, I can outline a dissemination and exploitation agreement that benefits all partners involved</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(10,135,143)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Ethical and sustainable thinking</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Behave ethically</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have heard about ethical and unethical behaviour in my private or professional environment</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can recognise behaviours that show integrity, honesty, responsibility, courage and commitment</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can apply ethical thinking to consumption and production processes</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can take responsibility for promoting ethical behaviour in my area of influence, (for example, by promoting gender balance highlighting inequalities and any lack of integrity)</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I make it my priority to make sure that ethical behaviour is respected and promoted in my area of influence and I take action against unethical behaviour</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Think sustainably</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that my activities may perhaps have an impact on environmental and sustainability level</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can list examples of environmentally friendly behaviour that benefits a community relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can produce a clear problem statement when faced with practices that are not sustainable relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can discuss the relationship between society and technical developments relating to CCE and IBCM, relating to their implications for the environment and I can discuss the impact an organisation has on the environment (and vice versa)</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can choose adequate methods for analysing environmental impact based on their advantages and disadvantages relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Assess impact</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have not yet got in contact with the assessment of the impact of my actions</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can find and list examples of changes caused by human action in social, cultural, environmental or economic contexts relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I I can identify the impact that taking up opportunities will have on me and my team, on the target group and on the surrounding community relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can analyse the implications of my value-creating activity within the boundaries of the system I am working in relating to CCE</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can carry out impact assessment, impact monitoring, and impact evaluation on my value-creating activity regardig to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Be accountable</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that entrepreneurs are accountable for their activities</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can tell the difference between being accountable for use of resources and accounting for the impact of my value-creating activity on stakeholders and the environment</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can tell the difference between input, output, outcomes and impact relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can discuss a range of accountability methods for both functional and strategic accountability relating to CCE and IBCM</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can use the accountability methods that hold me responsible to our internal and external stakeholders</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(17,10,198)</catcolor>
+  </categories>
+  <resultpage>
+    <header>
+      <title>
+        <en>This is your profile on the competences related to 'Spotting Ideas and Opportunities' , %%#p1b1#%%</en>
+      </title>
+      <description>
+        <en>&lt;p&gt;This competence spider displays your profile at the beginning of the M7 session related to your competence related to 'Spotting Ideas and Opportunities in CCE and IBCM contexts'.&lt;/p&gt;&lt;p&gt;It is based on three concepts:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;The EnterComp Competence Framework Entrepreneurial competences&lt;/li&gt;&lt;li&gt;The LEVEL5 taxonomy&lt;/li&gt;&lt;li&gt;The RE-DIRECT project and its follow-up project CCC-Hubs&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;img src='https://reveal-eu.org/wp-content/uploads/2018/03/Entrepreneurship_wheel.png' alt='' width='170' height='153' /&gt; &lt;img src='https://reveal-eu.org/wp-content/uploads/2017/12/about1_flat.png' alt='' width='249' height='142' /&gt;&lt;img src='https://reveal-eu.org/wp-content/uploads/2019/04/logo_ours.png' alt='' width='188' height='94' /&gt;&lt;/p&gt;</en>
+      </description>
+    </header>
+    <body>
+      <showtomsstyle>0</showtomsstyle>
+      <literature required="0">
+        
+      </literature>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+        </description>
+      </interpretation>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+        </description>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+      </interpretation>
+    </body>
+  </resultpage>
+  <footer>
+    <footerLogo>
+      <showFooterLogo>0</showFooterLogo>
+      <footerLogoUrl>https://path_to_wordpress_media_file</footerLogoUrl>
+    </footerLogo>
+    <footerText>
+      <en/>
+    </footerText>
+    <footerRight>
+      <en/>
+    </footerRight>
+    <fontColor>rgb(51,51,51)</fontColor>
+    <backgroundColor>rgb(118,118,118)</backgroundColor>
+  </footer>
+</questionnaire>

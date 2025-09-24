@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <config>
+    <language>
+      <default>en</default>
+      <languages>
+        <short>de</short>
+        <long>Deutsch</long>
+      </languages>
+      <languages>
+        <short>en</short>
+        <long>English</long>
+      </languages>
+      <languages>
+        <short>nl</short>
+        <long>Nederlands</long>
+      </languages>
+    </language>
+    <graphs>
+      <default>radar</default>
+      <showGraphSwitch>0</showGraphSwitch>
+      <graphSwitchOptions>
+        <options>radar</options>
+      </graphSwitchOptions>
+    </graphs>
+    <showHeaderButton>1</showHeaderButton>
+    <mainColors>
+      <primaryColor>rgb(84,116,137)</primaryColor>
+      <secondaryColor>rgb(143,168,180)</secondaryColor>
+    </mainColors>
+    <questionnaireFileName>comein_quick_check_en_nl_de</questionnaireFileName>
+  </config>
+  <head>
+    <title>
+      <de>Aufgeschlossenheit für die Beschäftigung und Arbeit mit Menschen mit Migrationshintergrund</de>
+      <en>Competences For Integrating Refugees In Your Workplace</en>
+      <nl>Competences For Integrating Refugees In Your Workplace</nl>
+    </title>
+    <button>
+      <text>
+        <de>Welcoming Enterprises</de>
+        <en>Welcoming Enterprises</en>
+        <nl>Welcoming Enterprises</nl>
+      </text>
+      <link>https://welcomingenterprises.eu/</link>
+    </button>
+    <logo>
+      <showLogo>1</showLogo>
+      <url>https://reveal-eu.org/wp-content/uploads/2019/06/cropped-COME-IN-Logo_finale-4.jpg</url>
+    </logo>
+    <backgroundImage>
+      <showBackgroundImage>0</showBackgroundImage>
+      <backgroundUrl/>
+    </backgroundImage>
+  </head>
+  <categories>
+    <categoryName>
+      <de>General Category Name</de>
+      <en>General Category Name</en>
+      <nl>General Category Name</nl>
+    </categoryName>
+    <evaluateCategory>0</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="after">
+        
+        <showPageInformations>1</showPageInformations>
+        <pageInformationsDescription>
+          <de>&lt;p&gt;Long Description&lt;/p&gt;</de>
+          <en>&lt;p&gt;Long Description&lt;/p&gt;
+&lt;div class="TnITTtw-translate-selection-button" style="left: 49.5px; top: 41.1px;"&gt;&amp;nbsp;&lt;/div&gt;</en>
+          <nl>&lt;p&gt;Long Description&lt;/p&gt;</nl>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <de>Welcoming Subtitle</de>
+          <en>Welcoming Subtitle</en>
+          <nl>Welcoming Subtitle</nl>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="input">
+        
+        <blockQuestion>
+          <de>Name</de>
+          <en>Name</en>
+          <nl>Name</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de/>
+            <en/>
+            <nl/>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>0</pageEvaluate>
+    </categoryPages>
+  </categories>
+  <categories>
+    <categoryName>
+      <de>Aufgeschlossenheit für die Beschäftigung und Arbeit mit Menschen mit Migrationshintergrund</de>
+      <en>Open-mindedness for employing and working with people with migrant background</en>
+      <nl>Open staan voor het aanwerven van en werken met mensen met een migratieachtergrond</nl>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Sich des Hintergrunds der Flüchtlinge bewusst sein</de>
+          <en>Being aware of refugees’ background</en>
+          <nl>Bewustzijn over de achtergrond van vluchtelingen</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich beobachte in anderen Unternehmen, dass Flüchtlinge, Asylbewerber und MigrantInnen ihre Erfahrungen, Überzeugungen, Werte und Verhaltensweisen an den Arbeitsplatz mitbringen, aber es betrifft mich nicht persönlich.</de>
+            <en>I observe in other companies that refugees, asylum seekers and migrants bring their experiences, beliefs, values and behaviours to the workplace, but it doesn’t affect me personally.</en>
+            <nl>Ik stel vast dat vluchtelingen, asielzoekers en migranten hun ervaringen, geloofsovertuigingen, waarden en gedrag meenemen naar hun werkplek, maar dit raakt mij niet persoonlijk.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin daran interessiert, Flüchtlinge und Migranten in meinem eigenen Unternehmen einzustellen und zu beschäftigen. Ich möchte von anderen über ihre Erfahrungen lernen und kann ihre Ansätze übernehmen.</de>
+            <en>I am interested in hiring and employing refugees and migrants in my own company. I want to learn from others about their experiences and can copy their approaches.</en>
+            <nl>k ben geïnteresseerd in het aannemen en tewerkstellen van vluchtelingen en migranten in mijn eigen bedrijf. Ik wil van anderen leren over hun ervaringen en kan hun aanpak kopiëren.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>I appreciate the diverse perspectives that arise from an intercultural workforce. I can select the appropriate approaches for the situation of my company for hiring and employing refugees.</de>
+            <en>I appreciate the diverse perspectives that arise from an intercultural workforce. I can select the appropriate approaches for the situation of my company for hiring and employing refugees.</en>
+            <nl>Ik waardeer de verschillende perspectieven die voortkomen uit een interculturele werkplek. Ik kan de juiste aanpak bepalen om vluchtelingen in dienst te nemen in mijn bedrijf.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann mit den positiven und negativen Auswirkungen auf die Arbeitskultur meines Unternehmens umgehen, die sich aus einer interkulturellen Belegschaft ergeben. Ich kann mein Wissen auf Situationen in einem privateren Umfeld übertragen. </de>
+            <en>I can deal with the positive and negative impacts on my company’s work culture rising from an intercultural workforce. I can transfer my knowledge to situations in a more private environment.</en>
+            <nl>Ik kan omgaan met de positieve en negatieve effecten op de werkcultuur van mijn bedrijf die het gevolg zijn van een intercultureel personeelsbestand. Ik kan mijn kennis overdragen naar situaties in een meer private omgeving. </nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin davon überzeugt, Flüchtlinge und Migranten einzustellen und zu beschäftigen, weil ich die Vorteile wahrnehme. Ich möchte andere Unternehmen ermutigen, Menschen mit Migrationshintergrund einzustellen und zu beschäftigen.</de>
+            <en>I am convinced of hiring and employing refugees and migrants because I perceive the benefits. I want to enhance other companies to hire and employ people with migrant background.</en>
+            <nl>k ben overtuigd van het aannemen en tewerkstellen van vluchtelingen en migranten omdat ik de voordelen ervan ken. Ik wil andere bedrijven stimuleren om mensen met een migrantenachtergrond aan te nemen en in dienst te nemen.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Umgang mit dem rechtlichen Rahmen für die Beschäftigung von Flüchtlingen</de>
+          <en>Dealing with the legal framework of employing refugees</en>
+          <nl>Omgaan met het wettelijk kader van de tewerkstelling van vluchtelingen</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich weiß, dass es rechtliche Rahmenbedingungen gibt, die ein Unternehmen berücksichtigen muss, wenn es plant, Flüchtlinge oder Migranten einzustellen, aber ich kenne keine Details.</de>
+            <en>I know that there are legal frameworks a company has to consider when it plans to hire refugees or migrants, but I don’t know details.</en>
+            <nl>Ik weet dat er wettelijke kaders bestaan waar een bedrijf rekening mee moet houden wanneer het van plan is om vluchtelingen of migranten in dienst te nemen, maar ik ken geen details.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>I am motivated to learn more about the legal frame for hiring and employing refugees and migrants. When others tell me what conditions are relevant, I can meet them.</de>
+            <en>I am motivated to learn more about the legal frame for hiring and employing refugees and migrants. When others tell me what conditions are relevant, I can meet them.</en>
+            <nl>Ik ben gemotiveerd om meer te weten te komen over het wettelijke kader voor het aanwerven en tewerkstellen van vluchtelingen en migranten. Als anderen me vertellen welke voorwaarden relevant zijn, zal ik er aan voldoen.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich informiere mich über die Entwicklung des Rechtsrahmens für die Integration von Flüchtlingen und Migranten in den Arbeitsmarkt. Ich kann die Bedingungen wählen, die für die Situation meines Unternehmens relevant sind.</de>
+            <en>I keep myself informed about developments in the legal framework for integrating refugees and migrants into the labour market. I can choose the conditions that are relevant for my company’s situation.</en>
+            <nl>Ik zorg dat ik op de hoogte ben van de ontwikkelingen in het wettelijke kader voor de integratie van vluchtelingen en migranten op de arbeidsmarkt. Ik kan de voorwaarden kiezen die relevant zijn voor de situatie van mijn bedrijf.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, für mein Unternehmen Beschäftigungsprozesse für Flüchtlinge und Asylbewerber unter Berücksichtigung der relevanten rechtlichen und administrativen Rahmenbedingungen zu entwickeln.</de>
+            <en>I am able to develop employment processes for refugees and asylum seekers for my company that take into account the relevant legal and administrative framework conditions.</en>
+            <nl>Ik ben in staat om voor mijn bedrijf arbeidsprocessen voor vluchtelingen en asielzoekers te ontwikkelen die rekening houden met de relevante wettelijke en administratieve randvoorwaarden.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich möchte gerne meine eigenen und die Erfahrungen meines Unternehmens teilen und anderen erklären, welche Schritte sie unternehmen müssen, um Menschen mit Migrationshintergrund zu gewinnen.</de>
+            <en>I am eager to share my own and my company's experiences and explain others what steps they need to take to recruit people with a migrant background.</en>
+            <nl>Ik wil graag mijn eigen ervaringen en die van mijn bedrijf delen en anderen uitleggen welke stappen zij moeten nemen om mensen met een migrantenachtergrond aan te werven.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(187,45,62)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <de>Kompetenzbewertung von Flüchtlingen</de>
+      <en>Refugees’ Competence Assessment</en>
+      <nl>Beoordeling van de bekwaamheid van vluchtelingen</nl>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Kompetenzmodell</de>
+          <en>Competency model</en>
+          <nl>Competentiemodel</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich weiß, dass das Kompetenzmodell existiert und welche Auswirkungen es auf jede Phase der Mitarbeiterreise hat, aber ich habe kein Interesse daran, es anzuwenden.</de>
+            <en>I know that the Competence model exists and what impact does it have on every stage of the employee journey, but I have no interest to apply it.</en>
+            <nl>Ik weet dat het competentiemodel bestaat en welke impact het heeft op elke fase van de reis van de werknemer, maar ik heb er geen belang bij om het toe te passen.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich interessiere mich für das Kompetenzmodell und habe ein grundlegendes Verständnis für seine Bauelemente, kann es aber nur unter Aufsicht anwenden.</de>
+            <en>I am interested in the Competence model and have a basic understanding of its building elements, but I can only apply it under supervision.</en>
+            <nl>Ik ben geïnteresseerd in het competentiemodel en heb een basiskennis van de bouwelementen ervan, maar ik kan het alleen onder toezicht toepassen.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann selbständig Kompetenzen und die dazugehörigen Verhaltensindikatoren für den organisatorischen Kontext des Unternehmens, für das ich arbeite, definieren.</de>
+            <en>I can define independently competences and their corresponding behavioural indicators for the organisational context of the company I work for.</en>
+            <nl>Ik kan zelfstandig competenties en de bijbehorende gedragsindicatoren definiëren voor de organisatorische context van het bedrijf waarvoor ik werk.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mit den 5 Entwicklungsschritten des Kompetenzmodells vertraut und kann es auf andere, unbekannte Zusammenhänge übertragen.</de>
+            <en>I am familiar with the 5 development steps of the Competence model and can transfer it to other, unknown contexts.</en>
+            <nl>Ik ben bekend met de 5 ontwikkelingsstappen van het competentiemodel en kan het overbrengen naar andere, onbekende contexten.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne das Kompetenzmodell so gut, dass ich andere bei der Umsetzung unterstützen und begleiten kann.</de>
+            <en>I know the Competence model so well that I can support and guide others in its implementation.</en>
+            <nl>Ik ken het competentiemodel zo goed dat ik anderen kan ondersteunen en begeleiden bij de implementatie ervan.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Vom Kompetenzmodell zur Kompetenzbewertung</de>
+          <en>From competence model to competence assessment</en>
+          <nl>Van competentiemodel tot competentiebeoordeling</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne die Schritte im Prozess der Kompetenzbewertung, habe aber kein Interesse daran, sie anzuwenden.</de>
+            <en>I know the steps in the Competence assessment process, but I have no interest to apply them.</en>
+            <nl>Ik ken de stappen in het competentiebeoordelingsproces, maar ik heb er geen belang bij om ze toe te passen.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich interessiere mich für die Implementierung des Kompetenzbewertungsprozesses und habe ein grundlegendes Verständnis dafür, kann ihn aber nur unter Anleitung anwenden.</de>
+            <en>I am interested in Competence assessment process implementation and have a basic understanding of it but can apply it only when instructed.</en>
+            <nl>Ik ben geïnteresseerd in de implementatie van het competentiebeoordelingsproces en heb er een basiskennis van, maar ik kan het alleen toepassen als ik er instructies voor krijg.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann einen Kompetenzbewertungsprozess mit Flüchtlingen selbstständig im organisatorischen Kontext des Unternehmens, für das ich arbeite, durchführen.</de>
+            <en>I can conduct a Competence assessment process with refugees on my own in the organisational context of the company I work for.</en>
+            <nl>Ik kan in de organisatorische context van het bedrijf waar ik voor werk in mijn eentje een competentiebeoordelingsproces met vluchtelingen uitvoeren.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mit den wichtigsten Kompetenzbeurteilungsfähigkeiten vertraut (z.B. aktiv zuhören, die richtigen Fragen stellen, effektives Feedback geben, etc.) und kann diese Fähigkeiten auf andere, unbekannte Zusammenhänge übertragen.</de>
+            <en>I am familiar with the main Competence assessors’ skills (e.g. listen actively, ask the right questions, give effective feedback, etc.) and can transfer those skills to other, unknown contexts.</en>
+            <nl>Ik ben bekend met de belangrijkste competentie assessoren (bv. actief luisteren, de juiste vragen stellen, effectieve feedback geven, etc.) en kan deze vaardigheden overbrengen naar andere, onbekende contexten.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne die Schritte und Fähigkeiten, die für die Durchführung des Prozesses der Kompetenzbewertung erforderlich sind, so gut, dass ich sie anderen beibringen kann.</de>
+            <en>I know the steps and skills required for the conduction of Competence assessment process so well that I can teach them to others.</en>
+            <nl>Ik ken de stappen en vaardigheden die nodig zijn om het competentiebeoordelingsproces zo goed mogelijk te begeleiden dat ik ze aan anderen kan leren.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Kompetenzbewertung in jeder Phase der Mitarbeiterreise</de>
+          <en>Competence assessment during every stage of the employee journey</en>
+          <nl>Competentiebeoordeling tijdens elke fase van de reis van de werknemer</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich weiß, dass es unterschiedliche Methoden zur Bewertung der Kompetenzen von Flüchtlingen gibt, aber ich habe kein persönliches und berufliches Interesse daran, sie anzuwenden.</de>
+            <en>I know that there are different methods to assess refugees’ competences, but I have no personal and professional interest to apply them.</en>
+            <nl>Ik weet dat er verschillende methoden bestaan om de competenties van vluchtelingen te beoordelen, maar ik heb er geen persoonlijk en professioneel belang bij om ze toe te passen.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich interessiere mich für die Bewertungsmethoden, die geeignet sind, die Kompetenzen von Flüchtlingen zu bewerten, und habe ein grundlegendes Verständnis davon, kann sie jedoch nur unter Aufsicht und Anleitung anwenden.</de>
+            <en>I am interested in the assessment methods that are suitable to assess refugees’ competences and have a basic understanding of them but can apply them only when supervised and guided.</en>
+            <nl>Ik ben geïnteresseerd in de beoordelingsmethoden die geschikt zijn om de competenties van vluchtelingen te beoordelen en die een basiskennis van deze competenties hebben, maar die alleen onder toezicht en begeleiding kunnen worden toegepast.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann unabhängig voneinander verschiedene Methoden der Kompetenzbewertung und -entwicklung (z.B. Verhaltensinterview, kompetenzorientiertes Training, Assessment Center, etc.) im organisatorischen Kontext des Unternehmens einsetzen, für das ich arbeite.</de>
+            <en>I can use independently different competence assessment and development methods (e.g. behavioural interview, competence-based training, assessment center, etc.) in the organisational context of the company I work for.</en>
+            <nl>Ik kan zelfstandig verschillende competentie-beoordelings- en ontwikkelingsmethoden (bijv. gedragsinterviews, competentiegerichte training, assessment center, etc.) gebruiken in de organisatorische context van het bedrijf waarvoor ik werk.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mit dem Prozess und den Methoden der Kompetenzbewertung vertraut und kann sie auf andere, unbekannte Zusammenhänge übertragen.</de>
+            <en>I am familiar with the competence assessment process and methods and can transfer it to other, unknown contexts.</en>
+            <nl>Ik ben bekend met het competentiebeoordelingsproces en de methoden en kan deze overbrengen naar andere, onbekende contexten.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne den Prozess und die Methoden der Kompetenzbewertung so gut, dass ich andere bei der Umsetzung unterstützen und leiten kann.</de>
+            <en>I know the competence assessment process and methods so well that I can support and guide others in its implementation.</en>
+            <nl>Ik ken het competentiebeoordelingsproces en de methoden zo goed dat ik anderen bij de uitvoering ervan kan ondersteunen en begeleiden.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Einführung in bewährte Verfahren im Bewertungsprozess – LEVEL5</de>
+          <en>Introduction to good practice in the assessment process – LEVEL5</en>
+          <nl>Inleiding tot goede praktijken in het beoordelingsproces - LEVEL5</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne den Begriff Validierung, aber ich habe kein persönliches und berufliches Interesse daran, ihn anzuwenden.</de>
+            <en>I know the term validation, but I have no personal and professional interest to apply it.</en>
+            <nl>Ik ken de term validatie, maar ik heb geen persoonlijke en professionele interesse om het toe te passen.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich interessiere mich für Kompetenzvalidierung und habe ein grundlegendes Verständnis davon, kann sie aber nur unter Anleitung anwenden.</de>
+            <en>I am interested in competence validation and have a basic understanding of it, but I can apply it only when instructed.</en>
+            <nl>Ik ben geïnteresseerd in competentievalidatie en heb er een basiskennis van, maar ik kan het alleen toepassen als ik er instructies voor krijg.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann das LEVEL5-Kompetenzfortschrittsmodell (Taxonomie) selbständig anwenden und Lernpfade und Bewertungskonzepte im organisatorischen Kontext des Unternehmens, für das ich arbeite, gestalten.</de>
+            <en>I can use independently the LEVEL5 competence progression model (taxonomy), and design learning pathways and assessment concepts in the organisational context of the company I work for.</en>
+            <nl>Ik kan zelfstandig het LEVEL5 competentieprogressiemodel (taxonomie) gebruiken en leerwegen en beoordelingsconcepten ontwerpen in de organisatorische context van het bedrijf waarvoor ik werk.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mit LEVEL5 und den geeigneten Bewertungsaktivitäten für jede Ebene der LEVEL5-Taxonomie vertraut und kann sie auf andere, unbekannte Zusammenhänge übertragen.</de>
+            <en>I am familiar with LEVEL5 and the suitable assessment activities relating to each level of the LEVEL5 taxonomy and can transfer it to other, unknown contexts.</en>
+            <nl>Ik ben bekend met LEVEL5 en de geschikte beoordelingsactiviteiten voor elk niveau van de LEVEL5 taxonomie en kan deze overdragen naar andere, onbekende contexten.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne LEVEL5 so gut, dass ich andere bei der Umsetzung und Entwicklung von Lernaktivitäten für jede Ebene der LEVEL5-Taxonomie unterstützen und leiten kann.</de>
+            <en>I know LEVEL5 so well that I can support and guide others in its implementation and development of learning activities for each level of the LEVEL5 taxonomy.</en>
+            <nl>Ik ken LEVEL5 zo goed dat ik anderen kan ondersteunen en begeleiden bij de implementatie en ontwikkeling van leeractiviteiten voor elk niveau van de LEVEL5 taxonomie.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(119,71,77)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <de>On-the-job-Ausbildung für Flüchtlinge</de>
+      <en>On-the-job training for refugees</en>
+      <nl>On-the-job training voor vluchtelingen</nl>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>On-the-job-Training für Flüchtlinge und MigrantInnen</de>
+          <en>On-the-Job Training for Refugees and Migrants</en>
+          <nl>On-the-Job Training voor vluchtelingen en migranten</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne das Konzept des On-the-job-Trainings und die Anforderungen für dessen Umsetzung, aber ich habe kein besonderes Interesse daran.</de>
+            <en>I know the concept of on-the-job training and requirements for its implementation, but I have no special interest in it.</en>
+            <nl>Ik ken het concept van on-the-job training en de vereisten voor de uitvoering ervan, maar ik heb er geen speciale belangstelling voor.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann das On-the-job-Training unter Anleitung anwenden und bin daran interessiert, mehr über seine Anwendung zu erfahren. Ich bin mir dessen Vorteile für die Integration von Flüchtlingen und Migranten in die Arbeitswelt bewusst.</de>
+            <en>I can apply on-the-job training when instructed and I’m interested in learning more about its application. I’m aware of its benefits for refugees’ and migrants’ labour integration.</en>
+            <nl>Ik kan on-the-job training toepassen wanneer ik daar een opdracht voor krijg en ik ben geïnteresseerd om meer te weten te komen over de toepassing ervan. Ik ben me bewust van de voordelen voor de arbeidsintegratie van vluchtelingen en migranten.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann beurteilen, ob mein Arbeitsplatz die Voraussetzungen für die Anwendung des On-the-job-Trainingsprogramms erfüllt, und ich kann das On-the-job-Training selbstständig in einem vertrauten Kontext anwenden.</de>
+            <en>I can assess if my workplace meets the requirements to apply on-the-job training programme and I can apply on-the-job training independently in a familiar context.</en>
+            <nl>Ik kan beoordelen of mijn werkplek voldoet aan de eisen om on-the-job trainingstrajecten aan te vragen en ik kan on-the-job training zelfstandig in een vertrouwde context toepassen.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mit dem On-the-job-Training vertraut und kann den Trainingsbedarf auf Seiten des Unternehmens und der Flüchtlinge/MigrantInnen identifizieren. Ich bin in der Lage, On-the-job in verschiedenen Kontexten anzuwenden.</de>
+            <en>I’m familiar with on-the-job training and I can identify the training needs on the side of the company and refugee/migrant employees. I’m able to apply on-the-job in different contexts.</en>
+            <nl>Ik ben vertrouwd met on-the-job training en kan de opleidingsbehoeften van het bedrijf en van de vluchtelingen/migrantenwerknemers in kaart brengen. Ik kan on-the-job training toepassen in verschillende contexten. </nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verfüge über fundierte Kenntnisse des On-the-job-Trainings und dessen Anwendung bei der Arbeitsintegration von Flüchtlingen und MigrantInnen. Ich kann es anderen beibringen und die Umsetzung des On-the-job-Trainings unterstützen.</de>
+            <en>I have deep knowledge of on-the-job training and its use in refugees’ and migrants labour integration. I can teach it to others and support the implementation of on-the-job training.</en>
+            <nl>Ik heb een grondige kennis van on-the-job training en het gebruik ervan bij de integratie van vluchtelingen en migranten op de arbeidsmarkt. Ik kan het anderen leren en de implementatie van on-the-job training ondersteunen.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Verstehen, wie Menschen lernen</de>
+          <en>Understanding How People Learn</en>
+          <nl>Begrijpen hoe mensen leren</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mir der Besonderheiten des Lernens Erwachsener bewusst, aber ich persönlich finde es nicht wichtig oder interessant.</de>
+            <en>I‘m aware of the specifics of adults’ learning, but I personally don’t find it important or interesting.</en>
+            <nl>Ik ben me bewust van de specifieke kenmerken van het leren van volwassenen, maar persoonlijk vind ik het niet belangrijk of interessant. </nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verstehe die Besonderheiten des Lernens von Erwachsenen, die das On-the-job-Training beeinflussen, und ich kann dieses Wissen unter Anleitung im On-the-job-Training anwenden.</de>
+            <en>I understand the specifics of adults’ learning influencing on-the-job training and I can use this knowledge in on-the-job training when instructed.</en>
+            <nl>Ik begrijp de specifieke kenmerken van het leren van volwassenen die van invloed zijn op on-the-job training en ik kan deze kennis gebruiken in de training op het werk wanneer ik daar instructies voor krijg.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>In einem vertrauten Kontext kann ich bei der Planung und Durchführung von On-the-Job-Trainings auf das bereits vorhandene Wissen und die Erfahrung der Erwachsenen aufbauen.</de>
+            <en>In a familiar context, I can build on adults’ pre-existing knowledge and experience when planning and implementing on-the-job training.</en>
+            <nl>In een vertrouwde context kan ik voortbouwen op de kennis en ervaring van werknemers bij het plannen en implementeren van een on-the-job training. </nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann On-the-job-Training anwenden, bei dem die bereits vorhandenen Kenntnisse und Erfahrungen der Erwachsenen auch in neuen Kontexten und Situationen berücksichtigt werden.</de>
+            <en>I can apply on-the-job training respecting adults’ pre-existing knowledge and experience also in new contexts and situations.</en>
+            <nl>Ik kan on-the-job training toepassen met respect voor de bestaande kennis en ervaring van werknemers, ook in nieuwe contexten en situaties. </nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich habe tiefe Kenntnisse über die Besonderheiten des Lernens von Erwachsenen und kann es anwenden. Ich kann es auch anderen beibringen und sie bei der Umsetzung von On-the-job-Trainings unterstützen.</de>
+            <en>I have deep knowledge of the specifics of adults’ learning and can apply it. I can also teach it to others and support them in the implementation of on-the-job training.</en>
+            <nl>Ik heb een grondige kennis van de specifieke kenmerken van het leren van volwassenen en kan deze toepassen. Ik kan het ook aan anderen leren en hen ondersteunen bij de implementatie van on-the-job training. </nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Trainingsfertigkeiten</de>
+          <en>Training Skills</en>
+          <nl>Trainingsvaardigheden</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mir der Fähigkeiten bewusst, die für die Umsetzung des On-the-job-Training entscheidend sind, aber sie sind für mich nicht von Interesse.</de>
+            <en>I am aware of the skills critical for on-the-job training implementation, but it’s not of my interest.</en>
+            <nl>Ik ben me bewust van de vaardigheden die essentieel zijn voor de uitvoering van on-the-job training, maar het is niet in mijn belang.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mir meiner eigenen technischen und zwischenmenschlichen Fähigkeiten bewusst und kann sie im On-the-job-Training unter Anleitung anwenden.</de>
+            <en>I am aware of my own technical and interpersonal skills and I can use them in the on-the-job training when instructed.</en>
+            <nl>Ik ben me bewust van mijn eigen technische en interpersoonlijke vaardigheden en ik kan deze gebruiken in de on-the-job training als ik daar instructies voor krijg.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Im vertrauten Kontext kann ich meine technischen und zwischenmenschlichen Fähigkeiten selbstständig einsetzen.</de>
+            <en>In familiar context, I can apply my technical and interpersonal skills independently.</en>
+            <nl>In een vertrouwde context kan ik mijn technische en interpersoonlijke vaardigheden zelfstandig toepassen. </nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Meine fachlichen und zwischenmenschlichen Fähigkeiten kann ich auch in neuen Trainingskontexten selbstständig einsetzen.</de>
+            <en>I can apply my technical and interpersonal skills independently also in new training contexts.</en>
+            <nl>Ik kan mijn technische en interpersoonlijke vaardigheden ook zelfstandig toepassen in nieuwe trainingscontexten.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verfüge über umfangreiche Trainingskompetenzen und kann sie im On-the-job-Training in verschiedenen Kontexten anwenden. Ich kann die Trainingsfähigkeiten anderen vermitteln und deren Entwicklung unterstützen. </de>
+            <en>I have considerable training skills and I can apply them in on-the-job training in different context. I can teach the training skills to others and support their development.</en>
+            <nl>Ik heb aanzienlijke opleidingsvaardigheden en kan deze in verschillende contexten toepassen in de on-the-job training. Ik kan de opleidingsvaardigheden aan anderen leren en hun ontwikkeling ondersteunen. </nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Methoden des On-the-job-Trainings</de>
+          <en>Methods of on-the-job training</en>
+          <nl>Methoden van on-the-job training</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne verschiedene Methoden und Techniken des On-the-job-Trainings, aber ich habe keinen persönlichen Bezug dazu.</de>
+            <en>I know different methods and techniques of on-the-job training, but I have no personal relation to it.</en>
+            <nl>Ik ken verschillende methoden en technieken van on-the-job training, maar ik heb er geen persoonlijke relatie mee. </nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verstehe verschiedene Methoden und Techniken des On-the-job-Trainings. Unter Anleitung kann ich sie anwenden und die gewünschten Ergebnisse erzielen.</de>
+            <en>I understand different methods and techniques of on-the-job training. When instructed, I can apply them and achieve desired outcomes.</en>
+            <nl>Ik begrijp de verschillende methoden en technieken van on-the-job training. Als ik daar de opdracht voor krijg, kan ik ze toepassen en het gewenste resultaat bereiken.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verstehe verschiedene Methoden des On-the-job-Trainings und kann sie in vertrauten Situationen selbstständig anwenden.</de>
+            <en>I understand different methods of on-the-job training and can apply them independently in familiar situation.</en>
+            <nl>k begrijp verschillende methoden van on-the-job training en kan deze zelfstandig toepassen in een vertrouwde situatie. </nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mit verschiedenen Methoden und Techniken des On-the-job-Trainings vertraut und kann es in verschiedenen Trainingskontexten anwenden.</de>
+            <en>I’m familiar with different methods and techniques of on-the-job training and can apply it in different training contexts.</en>
+            <nl>Ik ben bekend met verschillende methoden en technieken van on-the-job training en kan deze toepassen in verschillende trainingscontexten.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verfüge über fundierte Kenntnisse der Methoden und Techniken des On-the-job-Trainings und kann die am besten geeigneten für Flüchtlinge und MigrantInnen auswählen und anwenden. Ich kann sie weitervermitteln und andere unterstützen. </de>
+            <en>I have deep knowledge of on-the-job training methods and techniques and I can choose and apply those most suitable to refugees and migrants. I can teach it and support others.</en>
+            <nl>Ik heb een grondige kennis van on-the-job training methoden en technieken en ik kan kiezen en toepassen die het meest geschikt zijn voor vluchtelingen en migranten. Ik kan het onderwijzen en anderen ondersteunen. </nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Planung des On-the-job-Trainings</de>
+          <en>On-the-Job Training Planning</en>
+          <nl>On-the-Job Training Planning</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kenne die grundlegenden Schritte der Planung des On-the-job-Trainings, habe aber kein persönliches Interesse daran.</de>
+            <en>I know the basic steps of on-the-job training planning, but have no personal interest in it.</en>
+            <nl>Ik ken de basisstappen van de planning van opleidingen op de werkplek, maar heb er geen persoonlijke belangstelling voor. </nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verstehe alle Aspekte und Schritte der Planung, Durchführung und Bewertung von On-the-job-Trainingsprogrammen für Flüchtlinge und MigrantInnen, aber ich kann sie nur unter Anleitung anwenden.</de>
+            <en>I understand all the aspects and steps of planning, implementing and assessing on-the-job training programme for refugees and migrants, but I can apply them only when instructed.</en>
+            <nl>Ik begrijp alle aspecten en stappen van het plannen, implementeren en beoordelen van een trainingsprogramma voor vluchtelingen en migranten, maar ik kan ze alleen toepassen als ik daar instructies voor krijg. </nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>In vertrauten Situationen kann ich ein maßgeschneidertes On-the-job-Training selbstständig planen.</de>
+            <en>In familiar situations, I can plan well-tailored on-the-job training independently.</en>
+            <nl>In vertrouwde situaties kan ik zelfstandig een goed afgestemde on-the-job training plannen.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann das On-the-job-Training planen und dessen Erfolg auch in neuen Kontexten selbstständig bewerten.</de>
+            <en>I can plan on-the-job training and evaluate its success independently also in new contexts.</en>
+            <nl>Ik kan on-the-job training plannen en het succes ervan zelfstandig evalueren, ook in nieuwe contexten.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich verfüge über fundierte Kenntnisse in der Planung von On-the-job-Trainings. Ich kann es anderen beibringen und sie im Planungsprozess unterstützen.</de>
+            <en>I have deep knowledge of on-the-job training planning. I can teach it to others and support them in the planning process.</en>
+            <nl>Ik heb een grondige kennis van de planning van trainingen op de werkplek. Ik kan het anderen leren en hen ondersteunen in het planningsproces.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(208,179,183)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <de>Diversitätsmanagement</de>
+      <en>Diversity Management</en>
+      <nl>Diversiteitsmanagement</nl>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Arbeitskultur</de>
+          <en>Intercultural Mapping</en>
+          <nl>(inter)cultureel mapping</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich weiß, dass die Arbeitskulturen in den einzelnen Regionen, Ländern und Organisationen unterschiedlich sind, aber ich habe keinen persönlichen Bezug dazu.</de>
+            <en>I know that working cultures differs across regions, countries and organisations, but I have no personal relation to it.</en>
+            <nl>Ik ben in staat om te begrijpen en te erkennen dat werkculturen verschillen over regio’s, landen en organisaties heen, maar ik heb hiermee geen persoonlijke relatie.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, kulturelle Unterschiede und deren Auswirkungen auf meine Organisation unter Anleitung zu erkennen.</de>
+            <en>I am able to identify cultural differences and its implications for my organisation when instructed.</en>
+            <nl>Ik ben in staat om te begrijpen en te erkennen dat werkculturen verschillen over regio’s, landen en organisaties heen, maar ik heb hiermee geen persoonlijke relatie.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich kann verschiedene Methoden des kulturellen “Mappings” in einem mir vertrauten Kontext anwenden und sie beschreiben und erklären.</de>
+            <en>I can use different methods of cultural mapping in a context that I am familiar with and can describe and explain them.</en>
+            <nl>Ik kan verschillende methoden van culturele mapping gebruiken in een context die ik ken en deze beschrijven en verklaren.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mit verschiedenen Methoden des kulturellen “Mappings” vertraut und kann sie auf neue Zusammenhänge in meinem beruflichen und privaten Leben übertragen.</de>
+            <en>I am familiar with different methods of cultural mapping and I can transfer it to new contexts in my professional and private life.</en>
+            <nl>Ik ben vertrouwd met verschillende methoden van culturele mapping en ik kan deze toepassen in nieuwe situaties in mijn professionele en privé leven.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, andere im kulturellen “Mapping” zu schulen und zu unterstützen.</de>
+            <en>I am able to train and support others in cultural mapping.</en>
+            <nl>Ik ben in staat om anderen te trainen en te ondersteunen in culturele mapping.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Kommunikation mit anderen Kulturen</de>
+          <en>Communication With Other Cultures</en>
+          <nl>Interculturele competentie</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mir bewusst, dass (nicht-)verbale Kommunikation sehr kulturspezifisch sein kann und nehme die Vielfalt der Kommunikationscodes wahr, habe aber keinen persönlichen Bezug dazu.</de>
+            <en>I am aware that (non-) verbal communication can be very culture-specific and perceive the diversity in communication codes, but I have no personal relation to it.</en>
+            <nl>Ik ben ervan op de hoogte dat (non-) verbale communicatie zeer cultuurspecifiek kan zijn en ik heb oog voor de diversiteit in communicatiecodes, maar ik heb er geen persoonlijke relatie mee.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, mit (nicht-)verbaler Kommunikation in verschiedenen Kulturen umzugehen und sie unter Anleitung anzuwenden.</de>
+            <en>I am able to deal with (non-) verbal communication in different cultures and can apply it when instructed.</en>
+            <nl>Ik ben in staat om te kunnen omgaan met (non-) verbale communicatie in verschillende culturen en ik kan het toepassen wanneer ik hierin ondersteund wordt.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, mein eigenes (nicht-)verbales Verhalten in vertrauten Situationen zu beurteilen und sicherzustellen, dass meine Körpersprache und meine körperlichen Handlungen kulturell angepasst sind.</de>
+            <en>I am able to evaluate my own (non-) verbal behavior in familiar situations and ensure  that my body language and physical actions are culturally sensitive.</en>
+            <nl>Ik ben in staat om mijn eigen (non-) verbale gedrag te evalueren in gekende situaties en te verzekeren dat mijn lichaamstaal en fysieke gedragingen cultuursensitief zijn</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich möchte mehr über kulturelle Unterschiede in der Kommunikation zu erfahren und meine (nicht-)verbalen Kommunikationsstrategien auf andere unbekannte Zusammenhänge auszudehnen.</de>
+            <en>I am eager to learn more about cultural differences in communication and to expand my (non-) verbal communication strategies to other unknown contexts.</en>
+            <nl>Ik wil meer leren over culturele verschillen in communicatie en mijn (non)-verbale communicatiestrategieën uitbreiden naar andere ongekende situaties.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, Herausforderungen in der Kommunikation durch kulturelle Unterschiede zu meistern und authentisches Verhalten in einem multikulturellen Umfeld zu erzeugen und andere darin zu unterstützen.</de>
+            <en>I am able to overcome challenges in communication by cultural differences and to generate authentic behaviour in a multicultural environment and support others in it.</en>
+            <nl>Ik ben in staat om uitdagingen rond culturele verschillen in communicatie te overbruggen en om authentiek gedrag te genereren in een multiculturele omgeving en anderen hierin te ondersteunen</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Interkulturelles Arbeiten</de>
+          <en>Working in a Cross-cultural Team</en>
+          <nl>Management of cross-cultural teams</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, die Eigenschaften eines erfolgreichen interkulturellen Teams zu erkennen und verstehe die Vorteile der interkulturellen Arbeit, aber ich habe keinen persönlichen Bezug dazu.</de>
+            <en>I am able to recognize the characteristics of a successful cross-cultural team and I understand the benefits of intercultural working, but I have no personal relation to it.</en>
+            <nl>Ik ben in staat om de eigenschappen van een succesvol cross-cultureel team te herkennen en ik begrijp de voordelen van intercultureel werken, maar ik heb hier geen persoonlijke relatie mee.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich weiß unter Anleitung mit interkulturellen Teams umzugehen, auch in schwierigen geschäftlichen Situationen.</de>
+            <en>I know how to deal with cross-cultural teams when instructed, even in difficult business situations.</en>
+            <nl>Ik weet hoe ik moet omgaan met cross-culturele teams als ik hierin ondersteund wordt.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>In einem mir vertrauten interkulturellen Team kann ich Spannungen, Probleme und mögliche Konflikte aufzeigen.</de>
+            <en>I am able to highlight tensions, problems and possible conflicts in a cross-cultural team that I am familiar with.</en>
+            <nl>Ik ben in staat om spanningen, problemen en mogelijke conflicten in een cross-cultureel team die ik ken, aan te duiden.</nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, strategisch zu handeln, um mögliche Konflikte in einem interkulturellen Team zu verhindern und/oder zu bewältigen, auch in schwierigen, mir unbekannten geschäftlichen Situationen.</de>
+            <en>I am able to act strategically to prevent and/or to manage possible conflicts in a cross-cultural team, even in difficult business situations that are unknown for me.</en>
+            <nl>Ik ben in staat om strategisch te reageren om mogelijke conflicten te voorkomen en / of te managen, zelfs in moeilijke business situaties die ongekend zijn voor mij.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage, neue Ideen in das Unternehmen einzubringen und weiß, wie man diese neuen Ideen in einem interkulturellen Team umsetzen und andere dabei unterstützen kann.</de>
+            <en>I am able to bring in new ideas into the company and I know how to realise these new ideas within a cross-cultural team and to support others in it.</en>
+            <nl>Ik ben in staat om nieuwe ideeën te introduceren in een bedrijf en ik weet hoe ik ze moet realiseren in een cross-cultureel team en hoe ik anderen hierin kan ondersteunen.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(116,111,112)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <de>Kommunikation auf eine Weise, die Menschen mit begrenzten Kenntnissen der Landessprache verstehen können.</de>
+      <en>Communication in a way that people with a limited command of the local language can understand</en>
+      <nl>Communiceren op een manier die mensen met een beperkte beheersing van de lokale taal kunnen begrijpen.</nl>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <de/>
+          <en/>
+          <nl/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <de>Kommunikation in einfacher Sprache</de>
+          <en>Communicating with Easy Language</en>
+          <nl>Communicating with Easy Language</nl>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich weiß, dass der "einfache-Sprache”-Ansatz eine klare und erfolgreiche Kommunikation mit Menschen unterstützt, die nur begrenzte Kenntnisse der Landessprache haben, aber ich empfinde keine Notwendigkeit, ihn zu nutzen.</de>
+            <en>I know that the “easy language approach” supports a clear and successful communication with people who have a limited command of the local language, but I don´t feel the need to use it.</en>
+            <nl>Ik weet dat de "gemakkelijke taalbenadering" duidelijke en succesvolle communicatie ondersteunt met mensen die de lokale taal slechts beperkt beheersen, maar ik heb geen behoefte om deze te gebruiken.</nl>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin mir der Grundprinzipien des "einfache-Sprache"-Ansatzes bewusst. Ich bin daran interessiert, meinen Kommunikationsstil mit Nicht-Muttersprachlern zu verbessern, deshalb wende ich unter Anleitung gelegentlich Strategien an, die im Rahmen des "einfache-Sprache"-Ansatzes vorgeschlagen werden.</de>
+            <en>I am aware of the basic principles of the “easy language” approach. I am interested in improving my communication style with non-native speakers, therefore I occasionally apply strategies suggested in the “easy language approach” when instructed.</en>
+            <nl>Ik ben me bewust van de basisprincipes van de "gemakkelijke taal"-aanpak. Ik ben geïnteresseerd in het verbeteren van mijn communicatiestijl met niet-moedertaalsprekers, daarom pas ik af en toe strategieën toe die worden voorgesteld in de "gemakkelijke taalbenadering" wanneer ik ondersteund word.</nl>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage und motiviert, nach den Regeln des "einfache-Sprache"-Ansatzes mit Menschen mit begrenzten Kenntnissen der Landessprache zu kommunizieren und kann "einfache-Sprache” in vertrauten Situationen anwenden.</de>
+            <en>I am able and motivated to communicate according to the rules of the “easy language approach” with people with a limited command of the local language and I can apply “easy language” in familiar situations.</en>
+            <nl>Ik ben in staat en gemotiveerd om volgens de regels van de "gemakkelijke taalbenadering" te communiceren met mensen met een beperkte beheersing van de lokale taal en ik kan "gemakkelijke taal" toepassen in vertrouwde situaties. </nl>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage und bereit, meine Fähigkeiten zur Anwendung des "einfache-Sprache"-Ansatzes aktiv zu erweitern und weiß, wann ich den Ansatz in unbekannten Situationen im Gespräch mit Nicht-Muttersprachlern umsetzen muss.</de>
+            <en>I am able and willing to actively expand my ability to apply the “easy language approach” and I know when I have to implement the approach in unknown situations in the conversation with non-native speakers.</en>
+            <nl>Ik ben in staat en bereid om actief mijn vermogen om de "gemakkelijke taalbenadering" toe te passen, uit te breiden en ik weet wanneer ik de aanpak in onbekende situaties moet implementeren in het gesprek.</nl>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <de>Ich bin in der Lage und bereit, Menschen zu lehren und zu unterstützen, verschiedene einfache Sprachstrategien in verschiedenen Situationen anzuwenden.</de>
+            <en>I am able and willing to teach and to support people in using different easy language strategies in various situations.</en>
+            <nl>Ik ben in staat en bereid om mensen te onderwijzen en te ondersteunen bij het gebruik van verschillende eenvoudige taalstrategieën in verschillende situaties.</nl>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(222,80,97)</catcolor>
+  </categories>
+  <resultpage>
+    <header>
+      <title>
+        <de>Resultpage</de>
+        <en>Resultpage</en>
+        <nl>Resultpage</nl>
+      </title>
+      <description>
+        <de>&lt;p&gt;Longer description of results&lt;/p&gt;</de>
+        <en>&lt;p&gt;Longer description of results&lt;/p&gt;
+&lt;div class="TnITTtw-translate-selection-button" style="left: 86px; top: 41.1px;"&gt;&amp;nbsp;&lt;/div&gt;</en>
+        <nl>&lt;p&gt;Longer description of results&lt;/p&gt;</nl>
+      </description>
+    </header>
+    <body>
+      <showtomsstyle>0</showtomsstyle>
+      <literature required="0">
+        
+      </literature>
+      <interpretation required="1">
+        
+        <description>
+          <de/>
+          <en/>
+          <nl/>
+        </description>
+      </interpretation>
+      <interpretation required="1">
+        
+        <description>
+          <de/>
+          <en/>
+          <nl/>
+        </description>
+        <image_categories>
+          <de/>
+          <en/>
+          <nl/>
+        </image_categories>
+        <image_categories>
+          <de/>
+          <en/>
+          <nl/>
+        </image_categories>
+        <image_categories>
+          <de/>
+          <en/>
+          <nl/>
+        </image_categories>
+        <image_categories>
+          <de/>
+          <en/>
+          <nl/>
+        </image_categories>
+      </interpretation>
+    </body>
+  </resultpage>
+  <footer>
+    <footerLogo>
+      <showFooterLogo>0</showFooterLogo>
+      <footerLogoUrl>https://path_to_wordpress_media_file</footerLogoUrl>
+    </footerLogo>
+    <footerText>
+      <de/>
+      <en/>
+      <nl/>
+    </footerText>
+    <footerRight>
+      <de/>
+      <en/>
+      <nl/>
+    </footerRight>
+    <fontColor>rgb(51,51,51)</fontColor>
+    <backgroundColor>rgb(118,118,118)</backgroundColor>
+  </footer>
+</questionnaire>

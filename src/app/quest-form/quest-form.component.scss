@@ -1,0 +1,71 @@
+@import "src/variables.scss";
+// .mat-expansion-panel-header {
+//     background: #f1d3d5;
+//   }
+
+//   .mat-expansion-panel-header.mat-expanded {
+//     background: #dca69a;
+//   }
+
+// mat-form-field {
+//     padding: $spacing--medium;
+// }
+
+.mat-expansion-panel-body {
+    padding: 50px;
+}
+
+.colorChooseButton {
+    margin-bottom: $spacing--medium;
+}
+
+.questform-range-add-delete {
+    position: relative;
+    place-content: start;
+    margin-top: 50px;
+    z-index: 100;
+}
+
+.hintbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(#{$button-height} / 3);
+    height: calc(#{$button-height} / 3);
+    border-radius: 50%;
+    cursor: pointer;
+    background: $green;
+    color: white;
+
+    &:hover {
+        background: $green--dark;
+    }
+}
+
+::ng-deep .my-theme {
+    .category-panel, .page-panel {
+        .mat-expansion-panel-header[aria-disabled=true] {
+            cursor: pointer;
+            .mat-expansion-panel-header-title,
+            .mat-expansion-panel-header-description {
+                color: rgba(0, 0, 0, 0.54);
+            }
+        }
+    }
+}
+
+.drag-no-sort {
+    transform: none !important;
+}
+
+.panel-description-full-width {
+    flex-basis: 100%;
+}
+
+.expansion-input {
+    background-color: white;
+    text-align: center;
+    border-radius: 500px;
+}
+
+

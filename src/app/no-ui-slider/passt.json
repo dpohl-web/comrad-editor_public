@@ -1,0 +1,288 @@
+{
+    "config": {
+        "language": {
+            "default": "en",
+            "languages": [
+                {
+                    "short": "en",
+                    "long": "English"
+                }
+            ]
+        },
+        "graphs": {
+            "default": "radar",
+            "showGraphSwitch": "1",
+            "compareGraphs": "1",
+            "graphSwitchOptions": {
+                "options": [
+                    "radar",
+                    "doughnut",
+                    "polar",
+                    "bar"
+                ]
+            }
+        },
+        "showHeaderButton": "0",
+        "mainColors": {
+            "primaryColor": "rgb(215,103,14)",
+            "secondaryColor": "rgb(214,222,94)"
+        },
+        "questionnaireFileName": "test22",
+        "priorityListObject": {
+            "priorityList": [
+                "graphs",
+                "title",
+                "editor content",
+                "recommendations"
+            ]
+        },
+        "recommendationsIsUsed": "1",
+        "pdfGroup": {
+            "pdfDirectly": "1",
+            "pdfAsEmail": "0"
+        }
+    },
+    "head": {
+        "title": {
+            "en": "title new"
+        },
+        "button": {
+            "text": {
+                "en": ""
+            },
+            "link": "example: https://reveal-eu.org/"
+        },
+        "logo": {
+            "showLogo": "0",
+            "url": "https://path_to_wordpress_media_file"
+        },
+        "backgroundImage": {
+            "showBackgroundImage": "0",
+            "backgroundUrl": "https://path_to_wordpress_media_file"
+        }
+    },
+    "categories": [
+        {
+            "identifier": "Category",
+            "categoryName": {
+                "en": "cat 1"
+            },
+            "recommendationsIsUsed": "0",
+            "recommendationsGroup": {
+                "recommendationsRanges": [
+                    "50"
+                ],
+                "recommendationsContentArray": [
+                    {
+                        "isActive": "1",
+                        "recommendationContent": {
+                            "en": ""
+                        }
+                    },
+                    {
+                        "isActive": "1",
+                        "recommendationContent": {
+                            "en": ""
+                        }
+                    }
+                ]
+            },
+            "evaluateCategory": "0",
+            "categoryPages": [
+                {
+                    "identifier": "page1",
+                    "pageInformations": {
+                        "@attributes": {
+                            "position_to_catname": "before"
+                        },
+                        "showPageInformations": "1",
+                        "pageInformationsDescription": {
+                            "en": "<h4>via URL should only come from the Wordpress page where this editor is located. Otherwise, errors may occur during PDF generation. Please use the Wordpress media library. You can also drag and drop images from the local file system into the editor. This should be the preferred op</h4><p>&nbsp;</p><p>&nbsp;</p>"
+                        },
+                        "pageInformationsSubtitle": {
+                            "en": "bla before page info"
+                        }
+                    },
+                    "blocks": [
+                        {
+                            "identifier": "Block",
+                            "@attributes": {
+                                "type": "input"
+                            },
+                            "blockQuestion": {
+                                "en": "name bla"
+                            },
+                            "blockShortQuestion": {
+                                "en": "dummy short question"
+                            },
+                            "blockAnswers": [
+                                {
+                                    "identifier": "Answers",
+                                    "blockAnswer": {
+                                        "en": ""
+                                    },
+                                    "answerValue": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "pageEvaluate": "0"
+                }
+            ]
+        },
+        {
+            "identifier": "Cat2",
+            "categoryName": {
+                "en": "Cat 2"
+            },
+            "recommendationsIsUsed": "1",
+            "recommendationsGroup": {
+                "recommendationsRanges": [
+                    "20",
+                    "70"
+                ],
+                "recommendationsContentArray": [
+                    {
+                        "isActive": "1",
+                        "recommendationContent": {
+                            "en": "<p>0 - 21%</p>"
+                        }
+                    },
+                    {
+                        "isActive": "1",
+                        "recommendationContent": {
+                            "en": "<p>21 - 70 $</p>"
+                        }
+                    },
+                    {
+                        "isActive": "1",
+                        "recommendationContent": {
+                            "en": "<p>71 - 1000</p>"
+                        }
+                    }
+                ]
+            },
+            "evaluateCategory": "1",
+            "categoryPages": [
+                {
+                    "identifier": "Page",
+                    "pageInformations": {
+                        "@attributes": {
+                            "position_to_catname": "before"
+                        },
+                        "showPageInformations": "0",
+                        "pageInformationsDescription": {
+                            "en": ""
+                        },
+                        "pageInformationsSubtitle": {
+                            "en": ""
+                        }
+                    },
+                    "blocks": [
+                        {
+                            "identifier": "Block",
+                            "@attributes": {
+                                "type": "radio"
+                            },
+                            "blockQuestion": {
+                                "en": "waht about bla?"
+                            },
+                            "blockShortQuestion": {
+                                "en": "bla?"
+                            },
+                            "blockAnswers": [
+                                {
+                                    "identifier": "Answers",
+                                    "blockAnswer": {
+                                        "en": "bla 1"
+                                    },
+                                    "answerValue": 1
+                                },
+                                {
+                                    "identifier": "Answers",
+                                    "blockAnswer": {
+                                        "en": "bla 2"
+                                    },
+                                    "answerValue": 5
+                                },
+                                {
+                                    "identifier": "Answers",
+                                    "blockAnswer": {
+                                        "en": "bla 3"
+                                    },
+                                    "answerValue": 9
+                                }
+                            ]
+                        }
+                    ],
+                    "pageEvaluate": "1"
+                }
+            ],
+            "catcolor": "rgb(118,142,187)"
+        }
+    ],
+    "resultpage": {
+        "header": {
+            "title": {
+                "en": "this is  gtttt"
+            },
+            "description": {
+                "en": "<p>this is your damn result desc</p>\n<p>&nbsp;</p>\n<p>test</p>"
+            }
+        },
+        "body": {
+            "showtomsstyle": "0",
+            "literature": {
+                "@attributes": {
+                    "required": "0"
+                }
+            },
+            "interpretation": [
+                {
+                    "@attributes": {
+                        "required": "1"
+                    },
+                    "description": {
+                        "en": ""
+                    }
+                },
+                {
+                    "@attributes": {
+                        "required": "1"
+                    },
+                    "description": {
+                        "en": ""
+                    },
+                    "image_categories": [
+                        {
+                            "en": ""
+                        },
+                        {
+                            "en": ""
+                        },
+                        {
+                            "en": ""
+                        },
+                        {
+                            "en": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "footer": {
+        "footerLogo": {
+            "showFooterLogo": "0",
+            "footerLogoUrl": "https://path_to_wordpress_media_file"
+        },
+        "footerText": {
+            "en": "middle text"
+        },
+        "footerRight": {
+            "en": "right text"
+        },
+        "fontColor": "rgb(128,65,65)",
+        "backgroundColor": "rgb(131,54,54)"
+    }
+}

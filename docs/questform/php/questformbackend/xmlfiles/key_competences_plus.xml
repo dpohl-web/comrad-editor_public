@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <config>
+    <language>
+      <default>en</default>
+      <languages>
+        <short>en</short>
+        <long>English</long>
+      </languages>
+    </language>
+    <graphs>
+      <default>polar</default>
+      <showGraphSwitch>1</showGraphSwitch>
+      <graphSwitchOptions>
+        <options>radar</options>
+        <options>doughnut</options>
+        <options>polar</options>
+        <options>ownbar</options>
+        <options>bar</options>
+      </graphSwitchOptions>
+    </graphs>
+    <showHeaderButton>0</showHeaderButton>
+    <mainColors>
+      <primaryColor>rgb(42,152,208)</primaryColor>
+      <secondaryColor>rgb(231,136,136)</secondaryColor>
+    </mainColors>
+    <questionnaireFileName>key_competences_plus</questionnaireFileName>
+  </config>
+  <head>
+    <title>
+      <en>Key Competences</en>
+    </title>
+    <button>
+      <text>
+        <en/>
+      </text>
+      <link>example: https://reveal-eu.org/</link>
+    </button>
+    <logo>
+      <showLogo>0</showLogo>
+      <url>https://path_to_wordpress_media_file</url>
+    </logo>
+    <backgroundImage>
+      <showBackgroundImage>0</showBackgroundImage>
+      <backgroundUrl>https://path_to_wordpress_media_file</backgroundUrl>
+    </backgroundImage>
+  </head>
+  <categories>
+    <categoryName>
+      <en>General informations</en>
+    </categoryName>
+    <evaluateCategory>0</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>1</showPageInformations>
+        <pageInformationsDescription>
+          <en>&lt;p class='MsoNormal'&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;This is a self rating questionnaire for the competences (talents) that you have. The European Commission calls them &amp;bdquo;Key Competences&amp;ldquo;, Every citizen in the EU should have some oft hem, for instance:&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Literacy competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Multilingual&lt;span style='mso-spacerun: yes;'&gt;&amp;nbsp; &lt;/span&gt;competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Mathematical competence and competence in science, technology, and engineering&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Digital competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Personal, social and learning to learn competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Citizenship competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Entrepreneurship competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB' style='font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol; mso-ansi-language: EN-GB;'&gt;&lt;span style='mso-list: Ignore;'&gt;&amp;middot;&lt;span style='font: 7.0pt 'Times New Roman';'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;Cultural awareness and expression competence&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p class='MsoNormal'&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;During your mobility you might have developed some of these competences, for instance awareness for the foreign culture (8) or some language skills (2).&lt;/span&gt;&lt;/p&gt;&lt;p class='MsoNormal'&gt;&lt;span lang='EN-GB' style='mso-ansi-language: EN-GB;'&gt;At the end of your journey we would like to ask you to tick some statements related to these competences. The statements are ranked in a progressive order (from basic competence level to very high). It is not so important to reach a very high level, you should tick the statement which is best fitting to how you fell about this competence.&lt;/span&gt;&lt;/p&gt;</en>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en>Howdy,</en>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="input">
+        
+        <blockQuestion>
+          <en>Insert your name</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en/>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>0</pageEvaluate>
+    </categoryPages>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Literacy competence</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Literacy competence frage</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to understand and to speak in my mother tongue with my peers, friends and family.</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to communicate in the right way at different occasions, for instance in my group, at school or at work.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to adapt my communication to the persons that I speak to.</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am eager to learn different communication styles in new situations or groups in my professional and private life.</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to train and support others while communicating in my language.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(218,16,40)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Multilingual  competence</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Multilingual  competence</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to understand basic meanings and to speak singular words</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to apply simple language exercises in reading and writing.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to make myself understood in the foreign language and I enjoy communicating. I can express myself also in more complex matters and situations if I get a bit of assistance.</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to make myself understand, speak and also contribute in difficult discussions in the foreign language without assistance – in writing and verballyI am eager to learn more of the language.</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to communicate in almost every situation I can imagine in the foreign language. I can train and support others while communicating in another language.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(210,124,134)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Mathematical competence and competence in science, technology, and engineering</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Mathematical competence and competence in science, technology, and engineering</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to count. I know what natural sciences are.</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know why maths and sciences are important and can explain it. I am able to calculate costs in foreign currency.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to find mathematical solutions in a known context, e.g. I can calculate a budget that I have available for something and am able to plan my corresponding expenditures in an economic way.</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able and like to use maths and sciences in new situations (e.g. new field of work) and am ready to learn more.</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to solve complex mathematical and scientific problems in a new professional field. I like to use both, maths and science in my future life.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(184,23,220)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Digital competence</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Digital competence</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can deal with basic functions of my IT devices.</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can carry out different actions and operations on my devices which are beyond simple usage in private contexts. I can operate specific software that is needed in my professional live, when being instructed.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have a good theoretical understanding of the functioning of hardware and different specific software programmes. I use software to present myself online in a professional context (master my digital identity ) and for my professional development.</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am eager to learn how to use new software in my private and professional field.</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to teach others how to use specific software. I can combine and program different software.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(45,187,163)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Personal, social and learning to learn competence</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Personal, social and learning to learn competence</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have never really thought about learning. I only learn something new if I have to</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I learn when something is interesting for me and when it helps me to solve a problem.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I like to learn and, if it is useful and meaningful, I also enjoy it. I like to be with other people while doing something together</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>If I’m doing something which is interesting for me I would invest some time to learn more and to get a deeper understanding. I can also exercise and practice to get better in this field</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have thought for quite some time on learning and I perceive it as a central part of my personal development. I am open to any kind of training and learning offers.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(163,159,35)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Citizenship competence</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Citizenship competence</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know to which social circles I belong and where I feel familiar.</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I understand the values and standards in my communities and know how to behave in a good and corresponding way.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know the concept of citizenship and I find it important to engage in society. I enjoy to take part in social projects and do something for society and environment.</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am committed to play an active role in different communities on social,environmental or cultural development.</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>Wherever I go – I search for community and active citizenship projects and look for opportunities to contribute.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(100,64,69)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Entrepreneurship competence</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Entrepreneurship competence</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know what an enterprise is and that they are good for the economy. enterprises do and what business is good for.</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I participated in activities that have a value for an enterprise or an NGO. I am interested in taking initiative and develop my ideas.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know how to develop new ideas that have an impact on business or society and partly tested them in project(s) in my private or professional live.</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to turn ideas into actions. I can apply entrepreneurship activities in new fields and contribute with my ideas and project management skills in new projects.</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to evaluate a project and also develop a business strategy on my own.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(40,77,40)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Cultural awareness and expression competence</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Cultural awareness and expression competence</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that our society consists of diverse cultures and human beings with different preferences.</en>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am tolerant and respond open-mindedly to different ideas and values.</en>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I respect and am aware of cultural differences and I am able work effectively with people from a range of social and cultural backgrounds.</en>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can make use of social and cultural differences to create new ideas and increase both innovation and quality of work.</en>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am committed to collaborate and support people from diverse backgrounds and I do this in different societal fields.</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(188,152,208)</catcolor>
+  </categories>
+  <resultpage>
+    <header>
+      <title>
+        <en>Your competence profile</en>
+      </title>
+      <description>
+        <en>This is your compentence profile based on your own ratings.</en>
+      </description>
+    </header>
+    <body>
+      <showtomsstyle>0</showtomsstyle>
+      <literature required="0">
+        
+      </literature>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+        </description>
+      </interpretation>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+        </description>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+      </interpretation>
+    </body>
+  </resultpage>
+  <footer>
+    <footerLogo>
+      <showFooterLogo>0</showFooterLogo>
+      <footerLogoUrl>https://path_to_wordpress_media_file</footerLogoUrl>
+    </footerLogo>
+    <footerText>
+      <en/>
+    </footerText>
+    <footerRight>
+      <en/>
+    </footerRight>
+    <fontColor>rgb(255,255,255)</fontColor>
+    <backgroundColor>rgb(255,255,255)</backgroundColor>
+  </footer>
+</questionnaire>

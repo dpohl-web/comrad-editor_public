@@ -1,0 +1,202 @@
+<form *ngIf="resultForm" [formGroup]="resultForm">
+  <p>{{ 'resultDescriptionTitle' | translate }}</p>
+  <div formGroupName="resultPageTitle">
+    <div *ngFor="let resultPageTitleKey of resultPageTitle.controls | keys; let resultPageTitleIndex = index">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="{{ possibleLanguages[resultPageTitleKey] }}: result title" [formControlName]="resultPageTitleKey" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div formGroupName="resultPageDescription">
+    <h4>{{ 'resultDescriptionImages' | translate }}</h4>
+    <p>{{ 'editorPasteHint' | translate }}</p>
+    <div *ngFor="let resultPageDescriptionKey of resultPageDescription.controls | keys; let resultPageDescriptionIndex = index">
+      <!-- <mat-form-field class="example-full-width">
+        <textarea
+          matInput
+          placeholder="{{possibleLanguages[resultPageDescriptionKey]}}: result description"
+          [formControlName]="resultPageDescriptionKey"
+        ></textarea>
+      </mat-form-field> -->
+
+      <!-- <mat-form-field class="example-full-width">
+        <textarea
+          matInput
+          placeholder="{{possibleLanguages[resultPageDescriptionKey]}}: result description"
+          [formControl]="resultPageDescriptionKey"
+        ></textarea>
+      </mat-form-field> -->
+
+      <h4>{{ 'resultDescription' | translate }}{{ possibleLanguages[resultPageDescriptionKey] }}</h4>
+      <editor licenseKey="gpl" maxlength="500000" [formControl]="getResultPageDescriptionControl(resultPageDescriptionKey)" [init]="tinyMceSettings"></editor>
+      <div *ngIf="resultForm.get(['resultPageDescription', resultPageDescriptionKey]).invalid &&
+      resultForm.get(['resultPageDescription', resultPageDescriptionKey]).touched &&
+      resultForm.get(['resultPageDescription', resultPageDescriptionKey]).value === ''" class="tinymce-character-warning">
+        <mat-icon color="warn">warning</mat-icon>
+        <span>{{ 'tinymceLessCharacter' | translate }}</span>
+        <mat-icon color="warn">warning</mat-icon>
+      </div>
+      <div *ngIf="resultForm.get(['resultPageDescription', resultPageDescriptionKey]).invalid &&
+      resultForm.get(['resultPageDescription', resultPageDescriptionKey]).value !== ''" class="tinymce-character-warning">
+            <mat-icon color="warn">warning</mat-icon>
+            <span>{{ 'tinymceCharacterWaring' | translate }}</span>
+            <mat-icon color="warn">warning</mat-icon>
+          </div>
+    </div>
+  </div>
+  <h4>{{ 'isTomsStyle' | translate }}</h4>
+  <mat-slide-toggle formControlName="isTomsStyle"> </mat-slide-toggle>
+
+  <div [hidden]="!resultForm.get('isTomsStyle').value" formArrayName="interpretations">
+    <mat-accordion multi="true">
+      <div *ngFor="let interpretation of resultPageInterpretations.controls; let interpretationIndex = index">
+        <mat-expansion-panel [expanded]="false">
+          <mat-expansion-panel-header>
+            <mat-panel-title> interpretation </mat-panel-title>
+            <mat-panel-description> interpretation </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div [formGroupName]="interpretationIndex">
+            <mat-slide-toggle formControlName="interpretationIsRequired"> </mat-slide-toggle>
+            <div formGroupName="interpretationDescription">
+              <div
+                *ngFor="
+                  let resultPageInterpretationDescriptionKey of resultPageInterpretationDescriptions(interpretationIndex).controls | keys;
+                  let resultPageInterpretationDescriptionIndex = index
+                "
+              >
+                <mat-form-field class="example-full-width">
+                  <textarea
+                    matInput
+                    placeholder="{{ possibleLanguages[resultPageInterpretationDescriptionKey] }}: description"
+                    [formControlName]="resultPageInterpretationDescriptionKey"
+                  ></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div *ngIf="resultPageInterpretationImageCategories(interpretationIndex) !== null" formArrayName="imageCategories">
+              image-categries<br />
+              <div *ngFor="let imageCategory of resultPageInterpretationImageCategories(interpretationIndex).controls; let imageCategoryIndex = index">
+                <div [formGroupName]="imageCategoryIndex">
+                  <div
+                    *ngFor="
+                      let imageCategoryKey of resultPageInterpretationImageCategoryGroups(interpretationIndex, imageCategoryIndex).controls | keys;
+                      let imageCategoryKeyIndex = index
+                    "
+                  >
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="{{ possibleLanguages[imageCategoryKey] }}: imageCategory" [formControlName]="imageCategoryKey" />
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </div>
+    </mat-accordion>
+  </div>
+
+  <div formGroupName="graphSwitchGroup">
+    <h4>{{ 'isUserAbleToSwitchDiagram' | translate }}</h4>
+    <mat-slide-toggle formControlName="wantGraphSwitch"> </mat-slide-toggle>
+    <h4>{{ 'whichDiagrams' | translate }}</h4>
+    <div>
+      <mat-form-field>
+        <mat-select (selectionChange)="graphChange($event)" placeholder="graphs" formControlName="possibleGraphsSelectBox" multiple>
+          <mat-option *ngFor="let graph of possibleGraphs" [value]="graph">{{ graph.long }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <h4>{{ 'whichDefaultDiagram' | translate }}</h4>
+      <mat-form-field>
+        <mat-select placeholder="graph" formControlName="defaultGraphSelectBox">
+          <mat-option *ngFor="let defaultGraph of possibleDefaulGraphs" [value]="defaultGraph">
+            {{ defaultGraph.long }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div></div>
+    </div>
+    <div *ngIf="additionalBackendInfos.is_compare">
+      <h4>{{ 'compareResults' | translate }}</h4>
+      <p>{{ 'compareResultsDescription' | translate}}</p>
+      <mat-slide-toggle formControlName="compareGraphs"> </mat-slide-toggle>
+      <div [hidden]="!resultPageCompareGraphs.value" formGroupName="resultPageCompareButtonString">
+        <p>{{ 'compareButtonDescription' | translate}}</p>
+        <div *ngFor="let resultPageCompareButtonStringKey of resultPageCompareButtonString.controls | keys; let resultPageCompareButtonStringIndex = index">
+          <mat-form-field class="example-full-width">
+            <input
+                matInput
+                [errorStateMatcher]="matcher"
+                maxlength="50"
+                placeholder="{{ possibleLanguages[resultPageCompareButtonStringKey] }}: Compare Button String"
+                [formControlName]="resultPageCompareButtonStringKey"
+            />
+            <mat-error>{{ "questFileNameError" | translate }}</mat-error>
+            <mat-hint align="end">
+                {{ resultPageCompareButtonString.value[resultPageCompareButtonStringKey].length }} / 50
+            </mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="additionalBackendInfos.is_recommendations">
+    <h4>{{ 'recommendationsIsUsedTitle' | translate }}</h4>
+    <p>{{ 'recommendationsIsUsedDescription' | translate}}</p>
+    <mat-slide-toggle formControlName="recommendationsIsUsed"> </mat-slide-toggle>
+  </div>
+  <h4>{{ 'orderResultPageTitle' | translate}}</h4>
+  <p>{{ 'orderResultPageDescription' | translate}}</p>
+  <div class="droplist-segement resultPageSegements__list" cdkDropList (cdkDropListDropped)="dropresultPageSegement($event)">
+    <div class="drag-segement" *ngFor="let resultPageSegment of questionnaireData.config.priorityListObject.priorityList" cdkDrag>{{ resultPageSegment }}</div>
+  </div>
+
+  <!--
+    <div *ngIf="headerButtonControll.value">
+      <div>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            placeholder="URL"
+            formControlName="headerButtonUrl"
+            [errorStateMatcher]="matcher"
+          />
+          <mat-hint>the url for the button</mat-hint>
+          <mat-error
+            *ngIf="
+              LinkControl.hasError('email') && !LinkControl.hasError('required')
+            "
+          >
+            Please enter a valid address
+          </mat-error>
+          <mat-error *ngIf="LinkControl.hasError('required')">
+            URL is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div formGroupName="headerButtonText">
+        <div
+          *ngFor="
+            let headerFormButtonTextKey of headerFormButtonText.controls | keys;
+            let headerFormButtonTextIndex = index
+          "
+        >
+          <mat-form-field class="example-full-width">
+            <textarea
+              matInput
+              placeholder="{{headerFormButtonTextKey}} link text"
+              [formControlName]="headerFormButtonTextKey"
+            ></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  -->
+</form>
+<!-- <div class="button-row">
+  <button mat-stroked-button disabled>Disabled</button>
+</div> -->

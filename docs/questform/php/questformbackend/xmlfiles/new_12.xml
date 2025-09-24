@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <config>
+    <language>
+      <default>en</default>
+      <languages>
+        <short>en</short>
+        <long>English</long>
+      </languages>
+    </language>
+    <graphs>
+      <default>doughnut</default>
+      <showGraphSwitch>1</showGraphSwitch>
+      <graphSwitchOptions>
+        <options>radar</options>
+        <options>doughnut</options>
+        <options>polar</options>
+        <options>ownbar</options>
+        <options>bar</options>
+      </graphSwitchOptions>
+    </graphs>
+    <showHeaderButton>1</showHeaderButton>
+    <mainColors>
+      <primaryColor>rgb(150,56,56)</primaryColor>
+      <secondaryColor>rgb(211,147,147)</secondaryColor>
+    </mainColors>
+    <questionnaireFileName>new_12</questionnaireFileName>
+  </config>
+  <head>
+    <title>
+      <en>grthgdrthdthdthd dthdfthdft dthdfthdt dthdt dthd th dfth dfth dft</en>
+    </title>
+    <button>
+      <text>
+        <en>fgzjfgzj</en>
+      </text>
+      <link>example: https://reveal-eu.org/</link>
+    </button>
+    <logo>
+      <showLogo>0</showLogo>
+      <url/>
+    </logo>
+    <backgroundImage>
+      <showBackgroundImage>1</showBackgroundImage>
+      <backgroundUrl>https://path_to_wordpress_media_file</backgroundUrl>
+    </backgroundImage>
+  </head>
+  <categories>
+    <categoryName>
+      <en>fzjfgzj</en>
+    </categoryName>
+    <evaluateCategory>0</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>1</showPageInformations>
+        <pageInformationsDescription>
+          <en>&lt;p&gt;fzgjfgzjfgzj&lt;/p&gt;</en>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en>fgzjfgzj</en>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="input">
+        
+        <blockQuestion>
+          <en>Name</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en/>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>0</pageEvaluate>
+    </categoryPages>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>kategorie 1</en>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>1</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en>subtitle</en>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Searchingfzjfgzj</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>fzjfgzj</en>
+          </blockAnswer>
+          <answerValue>6</answerValue>
+        </blockAnswers>
+      </blocks>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>fgzjfgzj</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>fzjfgzjfgzj</en>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>fzjfgzj</en>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>fzjfgzjf</en>
+          </blockAnswer>
+          <answerValue>9</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(50,164,68)</catcolor>
+  </categories>
+  <resultpage>
+    <header>
+      <title>
+        <en>sdrgsdrg</en>
+      </title>
+      <description>
+        <en>&lt;p&gt;sdrgsdrgsdrg&lt;/p&gt;</en>
+      </description>
+    </header>
+    <body>
+      <showtomsstyle>0</showtomsstyle>
+      <literature required="0">
+        
+      </literature>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+        </description>
+      </interpretation>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+        </description>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+        <image_categories>
+          <en/>
+        </image_categories>
+      </interpretation>
+    </body>
+  </resultpage>
+  <footer>
+    <footerLogo>
+      <showFooterLogo>0</showFooterLogo>
+      <footerLogoUrl>httpfwef://ewefwef</footerLogoUrl>
+    </footerLogo>
+    <footerText>
+      <en>englisch bla</en>
+    </footerText>
+    <footerRight>
+      <en>englisch right</en>
+    </footerRight>
+    <fontColor>rgb(199,116,116)</fontColor>
+    <backgroundColor>rgb(118,118,118)</backgroundColor>
+  </footer>
+</questionnaire>

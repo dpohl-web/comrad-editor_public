@@ -1,0 +1,80 @@
+<form *ngIf="headerFormIsReady" [formGroup]="headerForm">
+  <h3>{{ 'chooseQuestTitle' | translate }}</h3>
+  <div formGroupName="questionnaireTitle">
+    <div *ngFor="let questionnaireTitleKey of (headerFormQuestionnaireTitle.controls | keys); let headerFormButtonTextIndex = index">
+      <mat-form-field class="example-full-width">
+        <input
+          matInput
+          placeholder="{{ possibleLanguages[questionnaireTitleKey] }}: Quest Title"
+          [formControlName]="questionnaireTitleKey"
+          (change)="changetest()"
+          [errorStateMatcher]="matcher"
+        />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <h3>{{ 'wantHeaderLogo' | translate }}</h3>
+  <div formGroupName="logo">
+    <mat-slide-toggle (change)="toggleLogo($event)" formControlName="showLogo"> </mat-slide-toggle>
+    <div *ngIf="headerLogoControll.value">
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="URL" formControlName="url" [errorStateMatcher]="matcher" />
+          <mat-hint>the url for the logo</mat-hint>
+          <!-- <mat-error
+              *ngIf="
+                LinkControl.hasError('email') && !LinkControl.hasError('required')
+              "
+            >
+              Please enter a valid address
+            </mat-error> -->
+          <mat-error *ngIf="LinkControl.hasError('required')"> URL is <strong>required</strong> </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <h3>{{ 'wantHeaderBackgroundImage' | translate }}</h3>
+  <div formGroupName="backgroundImage">
+    <mat-slide-toggle (change)="toggleBackgroundImage($event)" formControlName="showBackgroundImage"> </mat-slide-toggle>
+    <div *ngIf="headerBackgroundImageControll.value">
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="URL" formControlName="backgroundUrl" [errorStateMatcher]="matcher" />
+          <mat-hint>the url for the logo</mat-hint>
+          <!-- <mat-error
+              *ngIf="
+                LinkControl.hasError('email') && !LinkControl.hasError('required')
+              "
+            >
+              Please enter a valid address
+            </mat-error> -->
+          <mat-error *ngIf="LinkControl.hasError('required')"> URL is <strong>required</strong> </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <h3>{{ 'wantHeaderButton' | translate }}</h3>
+  <mat-slide-toggle (change)="toggle($event)" formControlName="isHeaderButton"> </mat-slide-toggle>
+  <div *ngIf="headerButtonControll.value">
+    <div>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="URL" formControlName="headerButtonUrl" [errorStateMatcher]="matcher" />
+        <mat-hint>the url for the button</mat-hint>
+        <mat-error *ngIf="LinkControl.hasError('email') && !LinkControl.hasError('required')">
+          Please enter a valid address
+        </mat-error>
+        <mat-error *ngIf="LinkControl.hasError('required')"> URL is <strong>required</strong> </mat-error>
+      </mat-form-field>
+    </div>
+    <div formGroupName="headerButtonText">
+      <div *ngFor="let headerFormButtonTextKey of (headerFormButtonText.controls | keys); let headerFormButtonTextIndex = index">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="{{ possibleLanguages[headerFormButtonTextKey] }}: link text" [formControlName]="headerFormButtonTextKey" [errorStateMatcher]="matcher" />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+</form>

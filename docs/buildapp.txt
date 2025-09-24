@@ -1,0 +1,13 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!  DONT FORGET TO BACKUP THE REMOTE XML FILES     !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+1. For productive build witch devBuild to false in: 'src/environments/environment.prod.ts'. (For assets path only use absolute ASSETS_PATH constant)
+
+2. build app with: npm run buildforwp
+
+wp plugin:
+
+Copy the files from dist/questionnaire-form/browser folder into  /wp-content/plugins/questform/angular/
+
+Increment the wp plugin version number 
+
+fill out the wp-content/plugins/questform/config.php

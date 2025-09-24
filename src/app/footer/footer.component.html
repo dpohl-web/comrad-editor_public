@@ -1,0 +1,71 @@
+<form *ngIf="footerFormIsReady" [formGroup]="footerForm">
+  <h3>{{ 'wantFooterLogo' | translate }}</h3>
+  <div formGroupName="footerLogo">
+    <mat-slide-toggle (change)="toggleLogo($event)" formControlName="showFooterLogo"> </mat-slide-toggle>
+    <div *ngIf="footerWantLogoControll.value">
+      <div>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="URL" formControlName="footerLogoUrl" [errorStateMatcher]="matcher" />
+          <mat-hint>the url for the logo</mat-hint>
+          <mat-error> URL is <strong>required</strong> </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div formGroupName="footerText">
+    <div *ngFor="let footerTextKey of (footerFormText.controls | keys); let footerTextIndex = index">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="{{ possibleLanguages[footerTextKey] }}: {{ 'footerMiddleText' | translate }}" [formControlName]="footerTextKey" [errorStateMatcher]="matcher" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div formGroupName="footerRight">
+    <div *ngFor="let footerRightKey of (footerFormRight.controls | keys); let footerRightIndex = index">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="{{ possibleLanguages[footerRightKey] }}: {{ 'footerRightText' | translate }}" [formControlName]="footerRightKey" [errorStateMatcher]="matcher" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div>
+    <h4>{{ 'setFooterFontColor' | translate }}</h4>
+    <input
+      [hidden]="true"
+      [value]="footerForm.get(['fontColor']).value"
+      [style.background]="footerForm.get(['fontColor']).value"
+      [cpOKButton]="true"
+      [cpSaveClickOutside]="false"
+      [cpOKButtonClass]="'btn btn-primary btn-xs'"
+      [(colorPicker)]="fontColor"
+      [cpOutputFormat]="'rgba'"
+      [cpAlphaChannel]="'disabled'"
+      [cpCancelButton]="true"
+      [cpCancelButtonClass]="'btn btn-secondary btn-xs'"
+      (colorPickerSelect)="colorChanged($event, 'fontColor')"
+      [(cpToggle)]="toggleFooterFontcolor"
+    />
+    <div class="colorChooseButton" [style.backgroundColor]="footerForm.get(['fontColor']).value" (click)="toggleFooterFontcolor = !toggleFooterFontcolor">
+      <span>click</span>
+    </div>
+  </div>
+  <div>
+    <h4>{{ 'setFooterBackgroundColor' | translate }}</h4>
+    <input
+      [hidden]="true"
+      [value]="footerForm.get(['backgroundColor']).value"
+      [style.background]="footerForm.get(['backgroundColor']).value"
+      [cpOKButton]="true"
+      [cpSaveClickOutside]="false"
+      [cpOKButtonClass]="'btn btn-primary btn-xs'"
+      [(colorPicker)]="backgroundColor"
+      [cpOutputFormat]="'rgba'"
+      [cpAlphaChannel]="'disabled'"
+      [cpCancelButton]="true"
+      [cpCancelButtonClass]="'btn btn-secondary btn-xs'"
+      (colorPickerSelect)="colorChanged($event, 'backgroundColor')"
+      [(cpToggle)]="toggleFooterBackGroundcolor"
+    />
+    <div class="colorChooseButton" [style.backgroundColor]="footerForm.get(['backgroundColor']).value" (click)="toggleFooterBackGroundcolor = !toggleFooterBackGroundcolor;">
+      <span>click</span>
+    </div>
+  </div>
+</form>

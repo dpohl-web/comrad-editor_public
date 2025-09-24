@@ -1,0 +1,169 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "questionnaire-form": {
+            "root": "",
+            "sourceRoot": "src",
+            "projectType": "application",
+            "prefix": "app",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "scss"
+                }
+            },
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:application",
+                    "options": {
+                        "deployUrl": "/wp-content/plugins/comrad/admin/assets/angular/",
+                        "baseHref": "./",
+                        "outputPath": {
+                          "base": "dist/questionnaire-form"
+                        },
+                        "index": "src/index.html",
+                        "polyfills": [
+                          "src/polyfills.ts"
+                        ],
+                        "tsConfig": "src/tsconfig.app.json",
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets",
+                            {
+                                "glob": "**/*",
+                                "input": "node_modules/tinymce",
+                                "output": "/assets/tinymce/"
+                               }
+                        ],
+                        "styles": [
+                            "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+                            "src/styles.scss"
+                        ],
+                        "scripts": [
+                            "node_modules/tinymce/tinymce.min.js",
+                            "node_modules/tinymce/themes/silver/theme.min.js",
+                            "node_modules/tinymce/plugins/fullscreen/plugin.min.js",
+                            "node_modules/tinymce/plugins/image/plugin.min.js",
+                            "node_modules/tinymce/plugins/code/plugin.min.js",
+                            "node_modules/tinymce/plugins/lists/plugin.min.js",
+                            "node_modules/tinymce/plugins/advlist/plugin.min.js",
+                            "node_modules/tinymce/plugins/table/plugin.min.js",
+                            "node_modules/tinymce/plugins/link/plugin.min.js",
+                            "node_modules/tinymce/plugins/media/plugin.min.js",
+                            "node_modules/tinymce/plugins/preview/plugin.min.js",
+                            "node_modules/tinymce/plugins/quickbars/plugin.min.js",
+                            "node_modules/tinymce/plugins/pagebreak/plugin.min.js"
+                        ],
+                        "extractLicenses": false,
+                        "sourceMap": true,
+                        "optimization": false,
+                        "namedChunks": true,
+                        "browser": "src/main.ts",
+                        "stylePreprocessorOptions": {
+                          "includePaths": [
+                            "."
+                          ]
+                        }
+                    },
+                    "configurations": {
+                        "production": {
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.prod.ts"
+                                }
+                            ],
+                            "optimization": {
+                                "scripts": true,
+                                "styles": {
+                                  "minify": true,
+                                  "inlineCritical": false
+                                },
+                                "fonts": true
+                              },
+                            "outputHashing": "none",
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "10mb",
+                                    "maximumError": "10mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb"
+                                }
+                            ]
+                        },
+                        "development": {}
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "proxyConfig": "proxy.conf.json"
+                    },
+                    "configurations": {
+                        "production": {
+                          "buildTarget": "questionnaire-form:build:production"
+                        },
+                        "development": {
+                          "buildTarget": "questionnaire-form:build:development"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                      "buildTarget": "questionnaire-form:build"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "src/test.ts",
+                        "polyfills": "src/polyfills.ts",
+                        "tsConfig": "src/tsconfig.spec.json",
+                        "karmaConfig": "src/karma.conf.js",
+                        "styles": [
+                            "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+                            "src/styles.scss"
+                        ],
+                        "scripts": [],
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets"
+                        ]
+                    }
+                }
+            }
+        },
+        "questionnaire-form-e2e": {
+            "root": "e2e/",
+            "projectType": "application",
+            "prefix": "",
+            "architect": {
+                "playwright-run": {
+                    "builder": "playwright-ng-schematics:playwright-run",
+                    "options": {
+                        "config": "playwright.config.ts"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "questionnaire-form:serve:production"
+                        },
+                        "development": {
+                            "devServerTarget": "questionnaire-form:serve:development"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                }
+            }
+        }
+    }
+}

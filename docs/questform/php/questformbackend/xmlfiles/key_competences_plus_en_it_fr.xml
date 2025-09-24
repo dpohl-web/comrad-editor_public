@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire>
+  <config>
+    <language>
+      <default>en</default>
+      <languages>
+        <short>en</short>
+        <long>English</long>
+      </languages>
+      <languages>
+        <short>fr</short>
+        <long>Français</long>
+      </languages>
+      <languages>
+        <short>it</short>
+        <long>Italiano</long>
+      </languages>
+    </language>
+    <graphs>
+      <default>polar</default>
+      <showGraphSwitch>1</showGraphSwitch>
+      <graphSwitchOptions>
+        <options>radar</options>
+        <options>doughnut</options>
+        <options>polar</options>
+        <options>ownbar</options>
+        <options>bar</options>
+      </graphSwitchOptions>
+    </graphs>
+    <showHeaderButton>1</showHeaderButton>
+    <mainColors>
+      <primaryColor>rgb(40,82,165)</primaryColor>
+      <secondaryColor>rgb(240,146,26)</secondaryColor>
+    </mainColors>
+    <questionnaireFileName>key_competences_plus_en_it_fr</questionnaireFileName>
+  </config>
+  <head>
+    <title>
+      <en>Key Competences</en>
+      <fr>Key Competences</fr>
+      <it>Key Competences</it>
+    </title>
+    <button>
+      <text>
+        <en>Competences Plus</en>
+        <fr>Competences Plus</fr>
+        <it>Competences Plus</it>
+      </text>
+      <link>https://competenceplus.eu/competence-identification/</link>
+    </button>
+    <logo>
+      <showLogo>1</showLogo>
+      <url>https://reveal-eu.org/wp-content/uploads/2019/03/BAT-Logo-Competences-300x99.jpg</url>
+    </logo>
+    <backgroundImage>
+      <showBackgroundImage>0</showBackgroundImage>
+      <backgroundUrl>https://path_to_wordpress_media_file</backgroundUrl>
+    </backgroundImage>
+  </head>
+  <categories>
+    <categoryName>
+      <en>General information</en>
+      <fr>Informations générales</fr>
+      <it>Informazioni generali</it>
+    </categoryName>
+    <evaluateCategory>0</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>1</showPageInformations>
+        <pageInformationsDescription>
+          <en>&lt;p class='MsoNormal'&gt;&lt;span lang='EN-GB'&gt;This is a self rating questionnaire for the competences (talents) that you have. The European Commission calls them &amp;bdquo;Key Competences&amp;ldquo;, Every citizen in the EU should have some of them, for instance:&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Literacy competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Multilingual&amp;nbsp; competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Mathematical competence and competence in science, technology, and engineering&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Digital competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Personal, social and learning to learn competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Citizenship competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Entrepreneurship competence&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span lang='EN-GB'&gt;Cultural awareness and expression competence&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p class='MsoNormal'&gt;&lt;span lang='EN-GB'&gt;During your mobility you might have developed some of these competences, for instance awareness of the foreign culture (8) or some language skills (2).&lt;/span&gt;&lt;/p&gt;&lt;p class='MsoNormal'&gt;&lt;span lang='EN-GB'&gt;At the end of your journey we would like to ask you to tick some statements related to these competences. The statements are ranked in a progressive order (from basic competence level to very high). It is not so important to reach a very high level, you should tick the statement which is best fitting to how you fell about this competence.&lt;/span&gt;&lt;/p&gt;</en>
+          <fr>&lt;p&gt;Ceci est un questionnaire d'auto-&amp;eacute;valuation des comp&amp;eacute;tences (talents) dont vous disposez. La Commission europ&amp;eacute;enne les appelle 'comp&amp;eacute;tences cl&amp;eacute;s'. Chaque citoyen de l'UE devrait en avoir quelques-unes, par exemple:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Communication en langue maternelle&lt;/li&gt;&lt;li&gt;Communication en langue &amp;eacute;trang&amp;egrave;re&lt;/li&gt;&lt;li&gt;Comp&amp;eacute;tence math&amp;eacute;matique et comp&amp;eacute;tences en sciences, en technologie et en ing&amp;eacute;nierie&lt;/li&gt;&lt;li&gt;Comp&amp;eacute;tence num&amp;eacute;rique&lt;/li&gt;&lt;li&gt;Apprendre &amp;agrave; apprendre&lt;/li&gt;&lt;li&gt;Comp&amp;eacute;tence sociales et civiques&lt;/li&gt;&lt;li&gt;Comp&amp;eacute;tence entrepreneuriale et sens des initiatives&lt;/li&gt;&lt;li&gt;Sensibilit&amp;eacute; culturelle et comp&amp;eacute;tence d&amp;rsquo;expression&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br /&gt;Au cours de votre mobilit&amp;eacute;, vous avez peut-&amp;ecirc;tre d&amp;eacute;velopp&amp;eacute; certaines de ces comp&amp;eacute;tences, par exemple la connaissance de la culture &amp;eacute;trang&amp;egrave;re (8) ou certaines comp&amp;eacute;tences linguistiques (2).&lt;/p&gt;&lt;p&gt;&lt;br /&gt;A la fin de votre parcours, nous aimerions vous demander de cocher quelques &amp;eacute;nonc&amp;eacute;s relatifs &amp;agrave; ces comp&amp;eacute;tences. Les &amp;eacute;nonc&amp;eacute;s sont class&amp;eacute;s par ordre progressif (du niveau de comp&amp;eacute;tence de base au niveau tr&amp;egrave;s &amp;eacute;lev&amp;eacute;). Il n'est pas si important d'atteindre un niveau tr&amp;egrave;s &amp;eacute;lev&amp;eacute;, vous devez cocher la d&amp;eacute;claration qui correspond le mieux &amp;agrave; o&amp;ugrave; vous vous situez vis-&amp;agrave;-vis de cette comp&amp;eacute;tence, pour avoir une image r&amp;eacute;aliste de vos forces et faiblesses.&lt;/p&gt;</fr>
+          <it>&lt;p&gt;Questo &amp;egrave; un questionario di autovalutazione sulle tue competenze. La Commissione Europea le chiama le &amp;ldquo;Competenze Chiave&amp;rdquo;. Ogni cittadino europeo dovrebbe avere alcune di queste competenze, come:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;competenza alfabetica funzionale&lt;/li&gt;&lt;li&gt;competenza multilinguistica&lt;/li&gt;&lt;li&gt;competenza matematica e competenza in scienze, tecnologie e ingegneria&lt;/li&gt;&lt;li&gt;competenza digitale&lt;/li&gt;&lt;li&gt;competenza personale, sociale e capacit&amp;agrave; di imparare ad imparare&lt;/li&gt;&lt;li&gt;competenza in materia di cittadinanza&lt;/li&gt;&lt;li&gt;competenza imprenditoriale&lt;/li&gt;&lt;li&gt;competenza in materia di consapevolezza ed espressione culturali.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br /&gt;Durante la tua esperienza di mobilit&amp;agrave; potresti aver sviluppato alcune di queste competenze, per esempio la conoscenza di culture straniere (8) o alcune abilit&amp;agrave; linguistiche (2).&lt;br /&gt;Al termine della tua esperienza vorremmo chiederti di realizzare una valutazione rispetto alle competenze acquisite. La valutazione avviene in ordine progressivo ( dal livello base a quello pi&amp;ugrave; elevato) . Non &amp;egrave; importante raggiungere il livello pi&amp;ugrave; alto, devi solo scegliere quale livello &amp;egrave; pi&amp;ugrave; vicino a come senti di possedere una determinata competenza, per avere un quadro realistico dei tuoi punti di forza e punti di debolezza.&lt;/p&gt;</it>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en>Hi there,</en>
+          <fr>Bonjour,</fr>
+          <it>Ciao a tutti,</it>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="input">
+        
+        <blockQuestion>
+          <en>Insert your name</en>
+          <fr>Insert your name</fr>
+          <it>Inserisci il tuo nome</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en/>
+            <fr/>
+            <it/>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>0</pageEvaluate>
+    </categoryPages>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Literacy competence</en>
+      <fr>Communication en langue maternelle</fr>
+      <it>Competenza alfabetica funzionale</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Communication in the mother tongue</en>
+          <fr>Communication en langue maternelle</fr>
+          <it>COMUNICARE in MADRE LINGUA</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to understand and to speak in my mother tongue with my peers, friends and family.</en>
+            <fr>Je suis capable de comprendre et de parler dans ma langue maternelle avec mes pairs, mes amis et ma famille.</fr>
+            <it>Sono capace di capire e parlare nella mia lingua, con i miei coetane, amici e familiari.</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to communicate in the right way at different occasions, for instance in my group, at school or at work.</en>
+            <fr>Je suis capable de communiquer correctement à différentes occasions, par exemple dans mon groupe, à l'école ou au travail.</fr>
+            <it>Sono in grado di comunicare correttamente in differenti situazioni, come nel mio gruppo di amici, a scuola e al lavoro.</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I understand different communication styles in different situations and groups that I am familiar with and can describe and explain them. I am able to adapt my communication style to the person that I speak to.</en>
+            <fr>Je comprends différents styles de communication dans différentes situations et différents groupes que je connais bien et que je peux décrire et expliquer. Je suis capable d'adapter mon style de communication à la personne à qui je parle.</fr>
+            <it>Comprendo diversi stili comunicativi in situazioni o gruppi conosciuti e posso descriverli e spiegarli.Sono in grado di adattare il mio stile comunicativo alle persone con le quali parlo.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am eager to learn different communication styles in new situations or groups in my professional and private life.</en>
+            <fr>Je suis avide d'apprendre différents styles de communication dans de nouvelles situations ou de nouveaux groupes dans ma vie professionnelle et privée.</fr>
+            <it>Posso imparare a comunicare in diversi stili, in nuove situazioni o gruppi nella mia vita professionale e privata.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to train and support others while communicating in my language.</en>
+            <fr>Je suis capable de former et de soutenir les autres tout en communiquant dans ma langue.</fr>
+            <it>Sono in grado di insegnare e supportare gli altri comunicando nella mia lingua</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(141,3,20)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Multilingual  competence</en>
+      <fr>Communication en langue étrangère</fr>
+      <it>Competenza multilinguistica</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Communication in foreign languages</en>
+          <fr>Communication en langue étrangère</fr>
+          <it>Comunicare in lingue straniere</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to understand basic meanings and to speak singular words.</en>
+            <fr>Je suis capable de comprendre les significations de base et de prononcer des mots particuliers</fr>
+            <it>Sono in grado di capire un linguaggio base e conosco singole parole di un’altra lingua.</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to apply simple language exercises in reading and writing.</en>
+            <fr>Je suis capable d'appliquer des exercices de langage simples en lecture et en écriture.</fr>
+            <it>Sono in grado di compiere esercizi semplici di lettura e e scrittura.</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to make myself understood in the foreign language and I enjoy communicating. I can express myself also in more complex matters and situations if I get a bit of assistance.</en>
+            <fr>Je suis capable de me faire comprendre dans la langue étrangère et j'aime communiquer. Je peux aussi m'exprimer dans des situations et des sujets plus complexes si j'obtiens un peu d'aide.</fr>
+            <it>argomenti e situazioni complesse con un piccolo aiuto.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to understand, speak and also to contribute to difficult discussions in a foreign language without assistance – in writing and verbally. I am eager to learn more of the language.</en>
+            <fr>Je suis capable de comprendre, de parler et aussi de contribuer à des discussions difficiles dans une langue étrangère sans aide, par écrit et verbalement.J'ai envie d'en apprendre davantage sur la langue.</fr>
+            <it>Sono in grado di capire, parlare e contribuire in discussioni difficili in una lingua straniera senza assistenza, scrivendo e parlando.Desidero imparare più lingue straniere.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to communicate in almost every situation I can imagine in the foreign language. I can train and support others while communicating in another language.</en>
+            <fr>Je suis capable de communiquer dans presque toutes les situations que je peux imaginer dans la langue étrangère. Je peux former et soutenir les autres tout en communiquant dans une autre langue.</fr>
+            <it>Sono in grado di comunicare nella maggior parte delle situazioni possibili in un’ altra lingua.Posso insegnare e aiutare gli altri comunicando in un’altra lingua.</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(253,119,12)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Mathematical competence and competence in science, technology, and engineering</en>
+      <fr>Compétence mathématique et compétences de base en sciences et technologies</fr>
+      <it>Competenza matematica e competenza in scienze, tecnologie e ingegneria</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Mathematical competence and basic competences in science and technology</en>
+          <fr>Compétence mathématique et compétences de base en sciences et technologies</fr>
+          <it>Competenza matematica e competenza in scienze, tecnologie e ingegneria</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to count. I know what natural sciences are.</en>
+            <fr>Je sais compter. Je sais ce que sont les sciences naturelles.</fr>
+            <it>So contare. So cosa sono le scienze naturali e tecniche</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know why maths and sciences are important and can explain it. I am able to calculate costs in foreign currency.</en>
+            <fr>Je sais pourquoi les mathématiques sont importantes et je peux l'expliquer. Je suis capable de calculer les coûts en devises étrangères.</fr>
+            <it>So perchè la conoscenza delle competenze scientifiche è importante e posso spiegarlo. Sono in grado di calcolare costi in valuta straniera.</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to find mathematical solutions in a known context, e.g. I can calculate a budget that I have available for something and am able to plan my corresponding expenditure in an economic way.</en>
+            <fr>Je suis capable de trouver des solutions mathématiques dans un contexte connu, par exemple, je peux calculer un budget dont je dispose et je suis capable de planifier mes dépenses correspondantes d’une manière économique.</fr>
+            <it>Sono in grado di trovare soluzioni matematiche in contesti conosciuti, ad es. Posso redigere un budget e sono capace di pianificarne le spese corrispondenti in un quadro economico.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able and like to use maths and sciences in new situations (e.g. new field of work) and am ready to learn more.</en>
+            <fr>Je suis capable et j'aime utiliser les mathématiques dans de nouvelles situations ou dans de nouvelles tâches (par exemple, dans un nouveau domaine de travail) et je suis prêt à en apprendre davantage.</fr>
+            <it>Sono in grado di usare le competenze scientifiche in nuove situazioni professionali e nuovi compiti. Posso imparare ancora.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to solve complex mathematical problems in a new professional field and can assist other people in doing so.</en>
+            <fr>Je suis capable de résoudre des problèmes mathématiques complexes dans un nouveau domaine professionnel et je peux aider d'autres personnes à le faire.</fr>
+            <it>So risolvere complessi problemi matematici a livello professionale e posso aiutare altre persone a farlo.</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(243,222,13)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Digital competence</en>
+      <fr>Compétence numérique</fr>
+      <it>Competenza digitale</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Digital competence</en>
+          <fr>Compétence numérique</fr>
+          <it>Competenza digitale</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can deal with basic functions of my IT devices.</en>
+            <fr>Je peux m'occuper des fonctions de base de mes appareils informatiques.</fr>
+            <it>So usare funzioni base dei miei dispostivi elettronici.</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I can carry out different actions and operations on my devices which are beyond simple usage in private contexts, e.g. I can operate specific software that is needed in my professional life, when being told how to do it.</en>
+            <fr>Je peux effectuer différentes actions et opérations sur mes appareils qui vont au-delà d'une simple utilisation dans un contexte privé. Je peux utiliser par exemple un logiciel spécifique qui est nécessaire dans ma vie professionnelle, lorsque je reçois des instructions.</fr>
+            <it>So portare a termine diverse azioni e operazioni sul mio dispositivo per un uso personale. Posso usare programmi specifici che mi servono per il mio lavoro, quando sono già strutturati.</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I understand – in theory – how hardware and specific software programmes work. I use software to present myself online in a professional context (I control my digital identity) and for my professional development.</en>
+            <fr>Je comprends, en théorie, comment fonctionnent le matériel et les logiciels spécifiques. J'utilise un logiciel pour me présenter en ligne dans un contexte professionnel (maîtrise de mon identité numérique) et pour mon développement professionnel.</fr>
+            <it>Conosco - in teoria - come gli hardware e alcuni programmi specifici funzionano. Uso software per presentare me stesso on line in contesti professionali e per la mia carriera.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am eager to learn how to use new software in my private and professional field(s).</en>
+            <fr>Je suis avide d'apprendre à utiliser de nouveaux logiciels dans mon domaine privé et professionnel</fr>
+            <it>Desidero imparare ad usare nuovi programmi nella mia vita professionale e privata.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to teach others how to use specific software. I am able to programme specific software.</en>
+            <fr>Je suis capable d'enseigner aux autres comment utiliser un logiciel spécifique. Je suis capable de programmer des logiciels spécifiques.</fr>
+            <it>So insegnare ad altri come usare specifici programmi. So programmare specifici software.</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(45,187,163)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Personal, social and learning to learn competence</en>
+      <fr>Apprendre à apprendre</fr>
+      <it>Competenza personale, sociale e capacità di imparare ad imparare</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Learning to learn</en>
+          <fr>Apprendre à apprendre</fr>
+          <it>Imparare ad imparare</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I have never really thought about learning. I only learn something new if I have to.</en>
+            <fr>Je n'ai jamais vraiment pensé à apprendre. Je n'apprends quelque chose de nouveau que s'il le faut.</fr>
+            <it>Non ho mai pensato all’azione di imparare. Imparo qualcosa di nuovo solo quando devo.</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I learn when it helps me to solve a problem or the topic is interesting for me.</en>
+            <fr>J'apprends quand cela m'aide à résoudre un problème ou quand le sujet est intéressant pour moi.</fr>
+            <it>Imparo qualcosa quando mi aiuta a risolvere dei problemi o se l’argomento mi interessa.</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I like to learn and generally enjoy it – especially if the topic is useful and meaningful to me.</en>
+            <fr>J'aime apprendre et j'en profite généralement, surtout si le sujet est utile et significatif pour moi.</fr>
+            <it>Mi piace imparare e generalmente mi diverto, specialmente se gli argomenti sono utili e significativi per me.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>If I am interested in something, I actively look for new learning opportunities in order to become better in this area. I also work and practice independently to get better.</en>
+            <fr>Si quelque chose m'intéresse, je cherche activement de nouvelles possibilités d'apprentissage afin de m'améliorer dans ce domaine. Je fais aussi des exercices et je m'entraîne de façon indépendante pour m'améliorer.</fr>
+            <it>Se qualcosa mi interessa, cerco attivamente opportunità per imparare e migliorare in questo ambito. Mi esercito autonomamente per migliorarmi.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>Learning is very important for me and I see it as a central part of my personal development. I am open to any kind offers for training and learning.</en>
+            <fr>Pour moi, l'apprentissage est très important et je le considère comme un élément central de mon développement personnel. Je suis ouvert à tout type d'offres de formation et d'apprentissage.</fr>
+            <it>Imparare è molto importante per me e lo vedo come un obiettivo centrale della mia crescita personale.Sono aperto ad ogni nuova formazione e occasione di apprendimento.</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(38,235,11)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Citizenship competence</en>
+      <fr>Compétences sociales et civiques</fr>
+      <it>Competenza in materia di cittadinanza</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Social and civic competences</en>
+          <fr>Compétences sociales et civiques</fr>
+          <it>Compentenze in materia di cittadinanza</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know to which social circles/groups I belong and where I feel familiar.</en>
+            <fr>Je sais à quels cercles/groupes sociaux j'appartiens et où je me sens familier.</fr>
+            <it>So a quale gruppo sociale appartengo e dove mi sento affine.</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I understand the values and rules in my social circles/groups and know how to behave in a corresponding way.</en>
+            <fr>Je comprends les valeurs et les règles dans mes cercles/groupes sociaux et je sais comment me comporter en conséquence.</fr>
+            <it>Capisco I valori e le regole nel mio gruppo sociale e so come comportarmi di conseguenza.</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I find it important to engage in society. I enjoy taking part in social projects and doing something for society and/or the environment.</en>
+            <fr>Je trouve important de m'engager dans la société. J'aime participer à des projets sociaux et faire quelque chose pour la société et/ou l'environnement.</fr>
+            <it>Considero importante impegnarmi nella società. Mi piace partecipare a progetti sociali e fare qualcosa per la cittadinanza e per l’ambiente.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am committed to play an active role in different communities that promote and develop social, environmental or cultural aspects.</en>
+            <fr>Je m'engage à jouer un rôle actif dans les différentes communautés qui promeuvent et développent les aspects sociaux, environnementaux ou culturels.</fr>
+            <it>Mi impegno a partecipare con un ruolo attivo in diversi gruppi che promuovono lo sviluppo sociale, ambientale e culturale.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>Wherever I go, I search for and engage in social and community projects.</en>
+            <fr>Partout où je vais, je recherche à m’engager dans des projets sociaux et communautaires.</fr>
+            <it>Ovunque vada, cerco di conoscere e partecipare a progetti sociali e per la comunità.</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(100,64,69)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Entrepreneurship competence</en>
+      <fr>Sens de l'initiative et esprit d'entreprise</fr>
+      <it>Competenza imprenditoriale</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Sense of initiative and entrepreneurship</en>
+          <fr>Sens de l'initiative et esprit d'entreprise</fr>
+          <it>Competenza imprenditoriale</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that for an organisation (e.g. clubs, enterprises, NGOs,...) to be successful, its leaders need to have good ideas and take initiatives.</en>
+            <fr>Je sais que pour qu'une organisation (clubs, entreprises, ONG...) réussisse, ses dirigeants doivent avoir de bonnes idées et prendre des initiatives.</fr>
+            <it>So cosa ha bisogno un’organizzazione per funzionare, I suoi leader hanno bisogno di buone idee e di prendere l’iniziativa.</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I ‘ve already had some ideas which had value for or did helped an organisation (e.g. club, enterprise, NGO,…) that I am a part/member of.</en>
+            <fr>J'avais déjà quelques idées qui avaient de la valeur ou qui ont aidé une organisation (par exemple un club, une entreprise, une ONG,...) dont je fais partie ou dont je suis membre.</fr>
+            <it>Ho già proposto alcune idee per aiutare e migliorare organizzazioni di cui sono membro ( associazioni, club, ngo.)</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know how to develop new ideas that have an impact on business or society and partly tested them in project(s) in my private or professional life.</en>
+            <fr>Je sais comment développer de nouvelles idées qui ont un impact sur les affaires ou la société et je les ai partiellement testées dans des projets dans ma vie privée ou professionnelle.</fr>
+            <it>So come sviluppare nuove idee che hanno un impatto sul mondo degli affari e della società e le ho sperimentate in parte nella  mia vita privata e nel lavoro.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to turn ideas into actions. I am entrepreneurial in new fields and can start or contribute to new projects with my ideas and project management skills.</en>
+            <fr>Je suis capable de transformer des idées en actions. Je suis entrepreneur dans de nouveaux domaines et je peux démarrer ou contribuer à de nouveaux projets avec mes idées et mes compétences en gestion de projet.</fr>
+            <it>So trasformare le idee in azioni. Sono intraprendente in nuovi campi e posso contribuire a nuovi progetti con le mie idee e le mie competenze gestionali.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am able to evaluate a project and also develop a business strategy on my own.</en>
+            <fr>Je suis capable d'évaluer un projet et aussi de développer une stratégie d'entreprise par moi-même.</fr>
+            <it>Sono in grado di valutare un progetto e di sviluppare una strategia imprenditoriale in autonomia.</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(15,60,221)</catcolor>
+  </categories>
+  <categories>
+    <categoryName>
+      <en>Cultural awareness and expression competence</en>
+      <fr>Sensibilisation et expression culturelles</fr>
+      <it>Competenza in materia di consapevolezza ed espressione culturali</it>
+    </categoryName>
+    <evaluateCategory>1</evaluateCategory>
+    <categoryPages>
+      <pageInformations position_to_catname="before">
+        
+        <showPageInformations>0</showPageInformations>
+        <pageInformationsDescription>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsDescription>
+        <pageInformationsSubtitle>
+          <en/>
+          <fr/>
+          <it/>
+        </pageInformationsSubtitle>
+      </pageInformations>
+      <blocks type="radio">
+        
+        <blockQuestion>
+          <en>Cultural awareness and expression</en>
+          <fr>Sensibilisation et expression culturelles</fr>
+          <it>competenza in materia di consapevolezza ed espressione culturali</it>
+        </blockQuestion>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I know that our society consists of diverse cultures and human beings with different preferences.</en>
+            <fr>Je sais que notre société est composée de diverses cultures et d'êtres humains ayant des préférences différentes.</fr>
+            <it>So che nella nostra società ci sono diverse culture e persone con diverse mentalità.</it>
+          </blockAnswer>
+          <answerValue>1</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am tolerant and respond open-mindedly to different ideas and values.</en>
+            <fr>Je suis tolérant et je réagis avec ouverture d'esprit aux différentes idées et valeurs.</fr>
+            <it>Sono tollerante e reagisco positivamente alle differenze di idee e valori</it>
+          </blockAnswer>
+          <answerValue>2</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I respect and am aware of cultural differences and I am able to work effectively with people from a range of social and cultural backgrounds.</en>
+            <fr>Je respecte et suis conscient des différences culturelles. Je suis capable de travailler efficacement avec des personnes d'origines sociales et culturelles diverses.</fr>
+            <it>Rispetto e sono consapevole delle differenze culturali e sono in grado di lavorare con persone provenienti da diversi contesti sociali e culturali.</it>
+          </blockAnswer>
+          <answerValue>3</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>Cultural differences inspire me to think outside the box, to create new ideas and to improve my personal and professional life by incorporating the best aspects from different cultures.</en>
+            <fr>Les différences culturelles m'incitent à sortir des sentiers battus, à créer de nouvelles idées et à améliorer ma vie personnelle et professionnelle en intégrant les meilleurs aspects de différentes cultures.</fr>
+            <it>Le differenze culturali mi permettono di pensare diversamente , per creare nuove idee e migliorare la mia vita personale e professionale facendo miei I migliori elementi da diverse culture.</it>
+          </blockAnswer>
+          <answerValue>4</answerValue>
+        </blockAnswers>
+        <blockAnswers>
+          <blockAnswer>
+            <en>I am committed to collaborate and support people from diverse backgrounds and I do this in different societal fields.</en>
+            <fr>Je m'engage à collaborer et à soutenir des personnes d'origines diverses et je le fais dans différents domaines de la société.</fr>
+            <it>Sono impegnato a collaborare e aiutare persone che provengono da diversi backgrounds  e lo faccio in differenti campi.</it>
+          </blockAnswer>
+          <answerValue>5</answerValue>
+        </blockAnswers>
+      </blocks>
+      <pageEvaluate>1</pageEvaluate>
+    </categoryPages>
+    <catcolor>rgb(221,15,220)</catcolor>
+  </categories>
+  <resultpage>
+    <header>
+      <title>
+        <en>Your competence profile,  %%#p1b1#%%</en>
+        <fr>Votre profil de compétence,  %%#p1b1#%%</fr>
+        <it>Il tuo profilo di competenza, %%#p1b1#%%</it>
+      </title>
+      <description>
+        <en>&lt;h4 style='text-align: justify;'&gt;&amp;nbsp;&lt;/h4&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;1. Literacy competence&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;The communication in mother tongue is the ability to express and interpret concepts, thoughts, feelings, facts and opinions in both oral and written form (listening, speaking, reading and writing) in the mother tongue and to interact linguistically in an appropriate and creative way in a full range of social and cultural contexts: education, training, at work, at home, hobbies.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;2. Multilingual competence&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;In addition to the main skill dimensions of communication in the mother tongue, the multilingual competence asks mediation skills ((i.e. summarising, paraphrasing, interpreting or translating) and intercultural understanding (education, training, etc.). The level of proficiency depends on several factors (social and cultural context, environment, needs and personal interest) and the capacity for listening, speaking, reading and writing.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;3. Mathematical competence and competence in science, technology and engineering&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;Mathematical competence is the ability to develop and apply mathematical thinking in order to solve a range of problems in everyday situations, with the emphasis being placed on process, activity and knowledge. Basic competences in science and technology refer to the mastery, use and application of knowledge and methodologies that explain the natural world. These involve an understanding of the changes caused by human activity and the responsibility of each individual as a citizen.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;4. Digital competence&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;The digital competence involves the confident and critical use of information society technology (IST) at work, in hobbies and communication. Thus, basic skills in information and communication technology (ICT) are a necessity: using computer to obtain, evaluate, stock, product, introduce and share information and to communicate and participate (through Internet) to collaboration network. &lt;br /&gt;&lt;/span&gt;&lt;/h5&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;5. Personal, social and learning to learn competence&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;This competence is related to learning, the ability to pursue and organise one&amp;rsquo;s own learning, either individually or in groups, in accordance with one&amp;rsquo;s own needs, and awareness of methods and opportunities.&lt;/span&gt;&lt;br /&gt;&lt;span style='color: #000000;'&gt;This competence requires to acquire, treat and to have new knowledges and abilities on learning experiences and life to using and applying new knowledges in different context: at home, at work, in education and training.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;6. Citizenship competence&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;Social competence refers to personal, interpersonal and intercultural competence and all forms of behaviour that equip individuals to participate in an effective and constructive way in social and working life. It is linked to personal and social well-being. An understanding of codes of conduct and customs in the different environments in which individuals operate is essential. Civic competence, and particularly knowledge of social and political concepts and structures (democracy, justice, equality, citizenship and civil rights), equips individuals to engage in active and democratic participation.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;7. Entrepreneurship competence&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;Is the ability to turn ideas into action. It involves creativity, innovation and risk-taking, as well as the ability to plan and manage projects in order to achieve objectives. The individual is aware of the context of his/her work and is able to seize opportunities that arise. It is the foundation for acquiring more specific skills and knowledge needed by those establishing or contributing to social or commercial activity. This should include awareness of ethical values and promote good governance.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;8. Cultural awareness and expression competence&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;Competence which involves appreciation of the importance of the creative expression of ideas, experiences and emotions in a range of media (music, performing arts, literature and the visual arts).&lt;/span&gt;&lt;/h5&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h3&gt;&lt;span style='color: #000000;'&gt;This is your compentence profile based on your own ratings.&lt;/span&gt;&lt;/h3&gt;</en>
+        <fr>&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;1. Comp&amp;eacute;tence en mati&amp;egrave;re d&amp;rsquo;alphab&amp;eacute;tisme&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;La communication dans la langue maternelle est la capacit&amp;eacute; d'exprimer et d'interpr&amp;eacute;ter des concepts, des pens&amp;eacute;es, des sentiments, des faits et des opinions sous forme orale et &amp;eacute;crite (&amp;eacute;couter, parler, lire et &amp;eacute;crire) dans la langue maternelle et d'interagir linguistiquement de mani&amp;egrave;re appropri&amp;eacute;e et cr&amp;eacute;ative dans une gamme compl&amp;egrave;te de contextes sociaux et culturels : &amp;eacute;ducation, formation, travail, maison, loisirs.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;2. Comp&amp;eacute;tence multilingue&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;Outre les principales dimensions de comp&amp;eacute;tence de communication dans la langue maternelle, la comp&amp;eacute;tence multilingue fait appel aux comp&amp;eacute;tences de m&amp;eacute;diation (c'est-&amp;agrave;-dire la synth&amp;egrave;se, la paraphrase, l'interpr&amp;eacute;tation ou la traduction) et de compr&amp;eacute;hension interculturelle (&amp;eacute;ducation, formation, etc.). Le niveau de comp&amp;eacute;tence d&amp;eacute;pend de plusieurs facteurs (contexte social et culturel, environnement, besoins et int&amp;eacute;r&amp;ecirc;ts personnels) et de la capacit&amp;eacute; &amp;agrave; &amp;eacute;couter, parler, lire et &amp;eacute;crire.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;3. Comp&amp;eacute;tence math&amp;eacute;matique et comp&amp;eacute;tences en sciences, technologie et ing&amp;eacute;nierie&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;La comp&amp;eacute;tence math&amp;eacute;matique est la capacit&amp;eacute; de d&amp;eacute;velopper et d'appliquer la pens&amp;eacute;e math&amp;eacute;matique afin de r&amp;eacute;soudre une s&amp;eacute;rie de probl&amp;egrave;mes dans des situations quotidiennes, en mettant l'accent sur le processus, l'activit&amp;eacute; et les connaissances. Les comp&amp;eacute;tences de base en science et technologie font r&amp;eacute;f&amp;eacute;rence &amp;agrave; la ma&amp;icirc;trise, &amp;agrave; l'utilisation et &amp;agrave; l'application des connaissances et des m&amp;eacute;thodologies qui expliquent le monde naturel. Il s'agit de comprendre les changements provoqu&amp;eacute;s par l'activit&amp;eacute; humaine et la responsabilit&amp;eacute; de chaque individu en tant que citoyen.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;4. Comp&amp;eacute;tence digitale&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;La comp&amp;eacute;tence num&amp;eacute;rique implique l'utilisation s&amp;ucirc;re et critique des technologies de la soci&amp;eacute;t&amp;eacute; de l'information (TSI) au travail, dans les loisirs et la communication. Ainsi, les comp&amp;eacute;tences de base en technologies de l'information et de la communication (TIC) sont une n&amp;eacute;cessit&amp;eacute; : utiliser l'ordinateur pour obtenir, &amp;eacute;valuer, stocker, produire, introduire et partager l'information et pour communiquer et participer (via Internet) &amp;agrave; un r&amp;eacute;seau de collaboration.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&amp;nbsp;&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;hr /&gt;&lt;h4 style='text-align: justify;'&gt;&amp;nbsp;&lt;/h4&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;5. Comp&amp;eacute;tence personnelle, sociale et apprentissage pour apprendre &amp;agrave; apprendre&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;Cette comp&amp;eacute;tence est li&amp;eacute;e &amp;agrave; l'apprentissage, &amp;agrave; la capacit&amp;eacute; de poursuivre et d'organiser son propre apprentissage, individuellement ou en groupe, en fonction de ses propres besoins, et &amp;agrave; la conscience des m&amp;eacute;thodes et des opportunit&amp;eacute;s.&lt;/span&gt;&lt;br /&gt;&lt;span style='color: #000000;'&gt;Cette comp&amp;eacute;tence exige d'acqu&amp;eacute;rir, de traiter et d'avoir de nouvelles connaissances et capacit&amp;eacute;s sur les exp&amp;eacute;riences d'apprentissage et la vie pour utiliser et appliquer de nouvelles connaissances dans un contexte diff&amp;eacute;rent : &amp;agrave; la maison, au travail, dans l'&amp;eacute;ducation et la formation.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;6. Comp&amp;eacute;tence en mati&amp;egrave;re de citoyennet&amp;eacute;&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;La comp&amp;eacute;tence sociale d&amp;eacute;signe la comp&amp;eacute;tence personnelle, interpersonnelle et interculturelle et toutes les formes de comportement qui permettent aux individus de participer d'une mani&amp;egrave;re efficace et constructive &amp;agrave; la vie sociale et professionnelle. Elle est li&amp;eacute;e au bien-&amp;ecirc;tre personnel et social. Il est essentiel de comprendre les codes de conduite et les coutumes des diff&amp;eacute;rents environnements dans lesquels les individus &amp;eacute;voluent. La comp&amp;eacute;tence civique, et en particulier la connaissance des concepts et des structures sociales et politiques (d&amp;eacute;mocratie, justice, &amp;eacute;galit&amp;eacute;, citoyennet&amp;eacute; et droits civils), permet aux individus de s'engager dans une participation active et d&amp;eacute;mocratique.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;7. Comp&amp;eacute;tence entrepreneuriale&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;C'est la capacit&amp;eacute; de transformer des id&amp;eacute;es en actions. Elle implique cr&amp;eacute;ativit&amp;eacute;, innovation et prise de risques, ainsi que la capacit&amp;eacute; de planifier et de g&amp;eacute;rer des projets afin d'atteindre les objectifs. L'individu est conscient du contexte de son travail et est capable de saisir les opportunit&amp;eacute;s qui se pr&amp;eacute;sentent. C'est le fondement de l'acquisition de comp&amp;eacute;tences et de connaissances plus sp&amp;eacute;cifiques dont ont besoin ceux qui cr&amp;eacute;ent ou contribuent &amp;agrave; l'activit&amp;eacute; sociale ou commerciale. Cela inclut la sensibilisation aux valeurs &amp;eacute;thiques et la promotion de la bonne gouvernance.&lt;/span&gt;&lt;/h5&gt;&lt;h4 style='text-align: justify;'&gt;&lt;span style='text-decoration: underline;'&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;8. Sensibilisation culturelle et comp&amp;eacute;tence d'expression&lt;/span&gt;&lt;/span&gt;&lt;/h4&gt;&lt;h5 style='text-align: justify;'&gt;&lt;span style='color: #000000;'&gt;Comp&amp;eacute;tence qui implique l'appr&amp;eacute;ciation de l'importance de l'expression cr&amp;eacute;ative d'id&amp;eacute;es, d'exp&amp;eacute;riences et d'&amp;eacute;motions dans une gamme de m&amp;eacute;dias (musique, arts du spectacle, litt&amp;eacute;rature et arts visuels).&lt;/span&gt;&lt;/h5&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h3&gt;&lt;span style='color: #000000;'&gt;C'est votre profil de comp&amp;eacute;tence bas&amp;eacute; sur vos propres &amp;eacute;valuations.&lt;/span&gt;&lt;/h3&gt;</fr>
+        <it>&lt;h4&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;1. Alfabetizzazione&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;La comunicazione in lingua madre &amp;egrave; l'abilit&amp;agrave; di esprimere ed interpretare concetti, pensieri, sentimenti, fatti ed opinioni sia nella forma orale sia nella forma scritta (ascoltare, parlare, leggere e scrivere) in lingua madre e di interagire linguisticamente in modo appropriato e creativo in un'ampia variet&amp;agrave; di contesti sociali e culturali: educazione, formazione, al lavoro, a casa, durante gli hobby.&lt;/span&gt;&lt;/h5&gt;&lt;h4&gt;&lt;br /&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;2. Plurilinguismo&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;In aggiunta alla principale dimensione dell'abilit&amp;agrave; di parlare in lingua madre, il pluriliguismo richiede abilit&amp;agrave; di mediazione (per esempio riassumere, parafrasare, interpretare o tradurre) e di comprensione interculturale (educazione, formazione, ecc). Il livello di competenza dipende da molti fattori (contesto sociale e culturale, ambiente, bisogni ed interessi personali) e dalla capacit&amp;agrave; di ascoltare, parlare, leggere e scrivere.&lt;/span&gt;&lt;/h5&gt;&lt;h4&gt;&lt;br /&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;3. Competenza matematica e competenza in scienze, tecnologia e ingegneria.&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;La competenza matematica &amp;egrave; l'abilit&amp;agrave; di sviluppare e applicare il pensiero matematico per risolvere una variet&amp;agrave; di problemi nelle situazioni di tutti i giorni, mettendo l'enfasi sul processo, l'attivit&amp;agrave; e la conoscenza. Competenze base in scienze e tecnologia si riferiscono alla padronanza, l'uso e l'applicazione della conoscenza e delle metodologie che spiegano il metodo naturale. Queste includono la comprensione dei cambiamenti causati dall'attivit&amp;agrave; dell'uomo e la responsabilit&amp;agrave; di ogni individuo come cittadino.&lt;/span&gt;&lt;/h5&gt;&lt;h4&gt;&lt;br /&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;4. Competenza digitale&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;La competenza digitale include l'uso sicuro e critico dell'IST (Information Society Technology) al lavoro, negli hobby e nella comunicazione. Pertanto, abilit&amp;agrave; di base nell'ICT (Information and communication technology) rappresentano una necessit&amp;agrave;: usare un computer per ottenere, valutare, conservare, produrre, introdurre e condividere informazioni e per comunicare e partecipare (tramite internet) a collaborazioni.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/h5&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;hr /&gt;&lt;h4&gt;&amp;nbsp;&lt;/h4&gt;&lt;h4&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;5. Competenza personale, sociale e d'apprendimento&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;Questa competenza &amp;egrave; relativa all'apprendimento, l'abilit&amp;agrave; di raggiungere e organizzare il proprio apprendimento, o individualmente o in gruppo, in accordo con i propri bisogni e la consapevolezza dei metodi e delle opportunit&amp;agrave;. Questa competenza richiede di acquisire, trattare e avere nuove conoscenze e abilit&amp;agrave; sulle esperienze di apprendimento e sulla vita, per usare e applicare nuove conoscenze in contesti differenti: a casa, al lavoro, nell'educazione e nella formazione&lt;/span&gt;&lt;span style='color: #000000;'&gt;.&lt;/span&gt;&lt;/h5&gt;&lt;h4&gt;&lt;br /&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;6. Competenza civica&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;La competenza sociale si riferisce alla competenza personale, interpersonale e interculturale e a tutte le forme di comportamento che rendono capaci gli individui di partecipare, in modo efficiente e costruttivo, alla vita sociale e lavorativa. &amp;Eacute; collegata al benessere sociale e personale. La comprensione dei codici di condotta e dei costumi nei diversi ambienti nei quali gli individui operano &amp;egrave; essenziale. La competenza civica, e in particolare la conoscenza dei concetti e della struttura sociali e politici (democrazia, giustizia, uguaglianza, cittadinanza e diritti civili), rende gli individui in grado di essere coinvolti nella partecipazione attiva e democratica.&lt;/span&gt;&lt;/h5&gt;&lt;h4&gt;&lt;br /&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;7. Competenza d'imprenditoria&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;&amp;egrave; l'abilit&amp;agrave; di trasformare le idee in azioni. Include la creativit&amp;agrave;, l'innovazione e il prendersi il rischio, cos&amp;igrave; come l'abilit&amp;agrave; di pianificare e gestire i progetti in modo da ottenere degli obiettivi. L'individuo &amp;egrave; consapevole del contesto del suo lavoro ed &amp;egrave; in grado di cogliere le opportunit&amp;agrave; che sorgono. &amp;Eacute; la base per l'acquisizione di abilit&amp;agrave; e conoscenze pi&amp;ugrave; specifiche di cui coloro che contribuiscono all'attivit&amp;agrave; sociale o commerciale hanno bisogno. Questo dovrebbere includere la consapeolezza dei valori etici e promuovere il buon governo.&lt;/span&gt;&lt;/h5&gt;&lt;h4&gt;&lt;br /&gt;&lt;span style='color: #000000; text-decoration: underline;'&gt;8. Competenza di consapevolezza culturale ed espressiva&lt;br /&gt;&lt;/span&gt;&lt;/h4&gt;&lt;h5&gt;&lt;span style='color: #000000;'&gt;Competenza che include l'apprezzamento dell'importanza dell'espressione creativa di idee, esperienze e emozioni tramite una variet&amp;agrave; di mezzi (musica, arti performative, letteratura e le arti visive. &lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/h5&gt;&lt;hr /&gt;&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;&lt;h3&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style='color: #000000;'&gt;Questo &amp;egrave; il tuo profilo di compentenza basato sulle tue valutazioni.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/h3&gt;</it>
+      </description>
+    </header>
+    <body>
+      <showtomsstyle>0</showtomsstyle>
+      <literature required="0">
+        
+      </literature>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+          <fr/>
+          <it/>
+        </description>
+      </interpretation>
+      <interpretation required="1">
+        
+        <description>
+          <en/>
+          <fr/>
+          <it/>
+        </description>
+        <image_categories>
+          <en/>
+          <fr/>
+          <it/>
+        </image_categories>
+        <image_categories>
+          <en/>
+          <fr/>
+          <it/>
+        </image_categories>
+        <image_categories>
+          <en/>
+          <fr/>
+          <it/>
+        </image_categories>
+        <image_categories>
+          <en/>
+          <fr/>
+          <it/>
+        </image_categories>
+      </interpretation>
+    </body>
+  </resultpage>
+  <footer>
+    <footerLogo>
+      <showFooterLogo>1</showFooterLogo>
+      <footerLogoUrl>http://wp.questionnaire.local/wp-content/uploads/2019/06/EU-flag-Erasmus_vect_POS-1.jpg</footerLogoUrl>
+    </footerLogo>
+    <footerText>
+      <en>The European Commission support for the production of this publication does not constitute endorsement of the contents which reflects the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein.</en>
+      <fr>The European Commission support for the production of this publication does not constitute endorsement of the contents which reflects the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein.</fr>
+      <it>The European Commission support for the production of this publication does not constitute endorsement of the contents which reflects the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein.</it>
+    </footerText>
+    <footerRight>
+      <en/>
+      <fr/>
+      <it/>
+    </footerRight>
+    <fontColor>rgb(255,255,255)</fontColor>
+    <backgroundColor>rgb(40,82,165)</backgroundColor>
+  </footer>
+</questionnaire>

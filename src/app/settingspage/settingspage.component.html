@@ -1,0 +1,33 @@
+<form [formGroup]="settingsFormGroup">
+  <mat-radio-group
+    (change)="themeChangeAction($event.value)"
+    layout="row"
+    formControlName="themeControl"
+    required
+    [hidden]="true"
+  >
+    <ul>
+      <li>
+        <mat-radio-button value="my-theme">light</mat-radio-button>
+      </li>
+      <li>
+        <mat-radio-button value="dark-theme">dark</mat-radio-button>
+      </li>
+    </ul>
+  </mat-radio-group>
+  <h4>{{ "chooseLanguage" | translate }}</h4>
+  <mat-form-field>
+    <mat-select
+      placeholder='{{ "language" | translate }}'
+      formControlName="appLanguagesSelectBox"
+      (selectionChange)="emitAppLanguageStatus($event)"
+    >
+      <mat-option
+        *ngFor="let language of languageOptions"
+        [value]="language.value"
+      >
+        {{ language.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

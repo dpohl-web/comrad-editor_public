@@ -1,0 +1,129 @@
+<form *ngIf="finishFormGroup" [formGroup]="finishFormGroup">
+    <!-- Gruppe für Finish MetaData -->
+    <div formGroupName="finishMetaDataGroup">
+      <h4>{{ "changeQuestCount" | translate }}</h4>
+      <mat-form-field>
+        <input
+          matInput
+          formControlName="resultWasViewed"
+          type="number"
+        >
+      </mat-form-field>
+    </div>
+    <div *ngIf="additionalBackendInfos.is_compare" class="csvexport">
+        <h4>{{ "exportResultTitle" | translate }}</h4>
+        <button *ngIf="!isLoadingCsv" (click)="getCsvList()" class="export-csv-button" color="primary" mat-raised-button>
+            {{ "exportCsvButtonText" | translate }}
+          </button>
+          <mat-spinner diameter="40" *ngIf="isLoadingCsv"></mat-spinner>
+    </div>
+    <div *ngIf="csvStringArea" class="csv-export-string-area">
+        <div [ngClass]="{'csv-string-area-span': true, 'ang-background-green-400': csvStringAreaStatus, 'ang-background-red-400': !csvStringAreaStatus}">{{ csvStringArea | translate }}</div>
+    </div>
+  
+    <!-- Gruppe für Main Colors -->
+    <div formGroupName="mainColorGroup">
+      <div>
+        <h4>{{ "choosePrimaryColor" | translate }}</h4>
+        <input
+          [hidden]="true"
+          [formControl]="primaryColorControl"
+          [style.background]="primaryColor"
+          [cpOKButton]="true"
+          [cpSaveClickOutside]="false"
+          [cpOKButtonClass]="'btn btn-primary btn-xs'"
+          [(colorPicker)]="primaryColor"
+          [cpOutputFormat]="'rgba'"
+          [cpAlphaChannel]="'disabled'"
+          [cpCancelButton]="true"
+          [cpCancelButtonClass]="'btn btn-secondary btn-xs'"
+          (colorPickerSelect)="colorChanged($event, 'primaryColor')"
+          [(cpToggle)]="togglePrimarycolor"
+        >
+        <div class="colorChooseButton" [style.backgroundColor]="primaryColor" (click)="togglePrimarycolor = !togglePrimarycolor">
+          <span>click</span>
+        </div>
+      </div>
+      <div>
+        <h4>{{ "chooseSecondaryColor" | translate }}</h4>
+        <input
+          [hidden]="true"
+          [formControl]="secondaryColorControl"
+          [style.background]="secondaryColor"
+          [cpOKButton]="true"
+          [cpSaveClickOutside]="false"
+          [cpOKButtonClass]="'btn btn-primary btn-xs'"
+          [(colorPicker)]="secondaryColor"
+          [cpOutputFormat]="'rgba'"
+          [cpAlphaChannel]="'disabled'"
+          [cpCancelButton]="true"
+          [cpCancelButtonClass]="'btn btn-secondary btn-xs'"
+          (colorPickerSelect)="colorChanged($event, 'secondaryColor')"
+          [(cpToggle)]="toggleSecondarycolor"
+        >
+        <div class="colorChooseButton" [style.backgroundColor]="secondaryColor" (click)="toggleSecondarycolor = !toggleSecondarycolor">
+          <span>click</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Gruppe für PDF Einstellungen -->
+    <div formGroupName="pdfGroup">
+      <div>
+        <h4>{{ 'pdfDirectlyTitle' | translate }}</h4>
+        <p>{{ 'pdfDirectlyDescription' | translate }}</p>
+        <mat-slide-toggle formControlName="pdfDirectly"></mat-slide-toggle>
+      </div>
+      <div>
+        <h4>{{ 'pdfAsEmailTitle' | translate }}</h4>
+        <p>{{ 'pdfAsEmailDescription' | translate }}</p>
+        <mat-slide-toggle formControlName="pdfAsEmail"></mat-slide-toggle>
+      </div>
+    </div>
+  
+    <!-- Gruppe für PDF als E-Mail Passwort (nur anzeigen, wenn pdfAsEmail aktiviert) -->
+    <div *ngIf="finishFormGroup.get(['pdfGroup', 'pdfAsEmail']).value === true">
+      <p>{{ 'pdfAsEmailPasswordDescription' | translate }}</p>
+      <mat-form-field>
+        <input
+          matInput
+          [formControl]="pdfAsEmailPassword"
+          type="text"
+        >
+      </mat-form-field>
+      <br>
+      <button (click)="changeEmailPassword()" mat-raised-button>
+        <mat-icon>autorenew</mat-icon>&nbsp;&nbsp;{{ "changeEmailPassword" | translate }}
+      </button>
+    </div>
+  
+    <!-- Weitere Formularelemente -->
+    <p>{{ "saveInformations" | translate }}</p>
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        formControlName="questionnaireFileName"
+        [errorStateMatcher]="matcher"
+        maxlength="30"
+      />
+      <mat-error>{{ "questFileNameError" | translate }}</mat-error>
+      <mat-hint align="end">
+        {{ finishFormGroup.get('questionnaireFileName').value.length }} / 30
+      </mat-hint>
+    </mat-form-field>
+    <p *ngIf="!wholeFormIsValid">{{ "saveInvalidInformations" | translate }}</p>
+    <p *ngIf="wholeFormIsValid">{{ "saveValidInformations" | translate }}</p>
+    <p>
+      <a *ngIf="wholeFormIsValid" target="_blank" href="{{ urlToQuest }}/{{ finishFormGroup.get('questionnaireFileName').value }}">
+        {{ urlToQuest }}/{{ finishFormGroup.get('questionnaireFileName').value }}
+      </a>
+    </p>
+    <button (click)="resetFileName()" class="finish-save-button" mat-raised-button>
+      {{ "resetFilename" | translate }}
+    </button>
+    <button [color]="wholeFormIsValid ? 'primary' : 'warn'" class="finish-save-button" mat-raised-button (click)="getQuestListAndSave()">
+      save and create
+    </button>
+    <mat-spinner diameter="40" *ngIf="saveSpinner.show"></mat-spinner>
+  </form>
+  

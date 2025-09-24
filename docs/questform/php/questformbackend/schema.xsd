@@ -1,0 +1,740 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="ar" type="xs:string"/>
+    <xs:element name="bg" type="xs:string"/>
+    <xs:element name="ca" type="xs:string"/>
+    <xs:element name="cs" type="xs:string"/>
+    <xs:element name="da" type="xs:string"/>
+    <xs:element name="de" type="xs:string"/>
+    <xs:element name="de-du" type="xs:string"/>
+    <xs:element name="el" type="xs:string"/>
+    <xs:element name="en" type="xs:string"/>
+    <xs:element name="es" type="xs:string"/>
+    <xs:element name="es-mx" type="xs:string"/>
+    <xs:element name="eu" type="xs:string"/>
+    <xs:element name="fa" type="xs:string"/>
+    <xs:element name="fi" type="xs:string"/>
+    <xs:element name="fr" type="xs:string"/>
+    <xs:element name="he" type="xs:string"/>
+    <xs:element name="hu" type="xs:string"/>
+    <xs:element name="it" type="xs:string"/>
+    <xs:element name="ja" type="xs:string"/>
+    <xs:element name="ko" type="xs:string"/>
+    <xs:element name="lt" type="xs:string"/>
+    <xs:element name="mr" type="xs:string"/>
+    <xs:element name="nl" type="xs:string"/>
+    <xs:element name="pl" type="xs:string"/>
+    <xs:element name="pt-br" type="xs:string"/>
+    <xs:element name="pt" type="xs:string"/>
+    <xs:element name="ro" type="xs:string"/>
+    <xs:element name="ru" type="xs:string"/>
+    <xs:element name="sr-cr" type="xs:string"/>
+    <xs:element name="sr-lt" type="xs:string"/>
+    <xs:element name="sv" type="xs:string"/>
+    <xs:element name="tr" type="xs:string"/>
+    <xs:element name="uk" type="xs:string"/>
+    <xs:element name="zh-cn" type="xs:string"/>
+    <xs:element name="zh-tw" type="xs:string"/>
+
+    <xs:element name="short" type="xs:string"/>
+    <xs:element name="long" type="xs:string"/>
+    <xs:element name="default" type="xs:string"/>
+    <xs:element name="languages">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="short"/>
+                <xs:element ref="long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="options" type="xs:string"/>
+    <xs:element name="showGraphSwitch" type="xs:byte"/>
+    <xs:element name="graphSwitchOptions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="options" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="priorityList" type="xs:string"/>
+    <xs:element name="priorityListObject">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="priorityList" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="language">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="default"/>
+                <xs:element ref="languages" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="graphs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="default"/>
+                <xs:element ref="showGraphSwitch"/>
+                <xs:element ref="graphSwitchOptions"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="questionnaireFileName" type="xs:string"/>
+    <xs:element name="primaryColor" type="xs:string"/>
+    <xs:element name="secondaryColor" type="xs:string"/>
+    <xs:element name="mainColors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="primaryColor"/>
+                <xs:element ref="secondaryColor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="showHeaderButton" type="xs:byte"/>
+
+    <xs:element name="text">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="link" type="xs:string"/>
+    <xs:element name="title">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="button">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="text"/>
+                <xs:element ref="link"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="logo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="showLogo"/>
+                <xs:element ref="url"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footerLogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="showFooterLogo"/>
+                <xs:element ref="footerLogoUrl"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="backgroundImage">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="showBackgroundImage"/>
+                <xs:element ref="backgroundUrl"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="showLogo" type="xs:byte"/>
+    <xs:element name="showFooterLogo" type="xs:byte"/>
+    <xs:element name="showBackgroundImage" type="xs:byte"/>
+    <xs:element name="url" type="xs:string"/>
+    <xs:element name="footerLogoUrl" type="xs:string"/>
+    <xs:element name="backgroundUrl" type="xs:string"/>
+    <xs:element name="showPageInformations" type="xs:byte"/>
+    <xs:element name="pageInformationsDescription">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footerText">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footerRight">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pageInformationsSubtitle">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="blockAnswer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="answerValue" type="xs:byte"/>
+    <xs:element name="blockQuestion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="blockAnswers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="blockAnswer"/>
+                <xs:element ref="answerValue"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pageInformations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="showPageInformations"/>
+                <xs:element ref="pageInformationsDescription"/>
+                <xs:element ref="pageInformationsSubtitle"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="position_to_catname" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="blocks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="blockQuestion"/>
+                <xs:element ref="blockAnswers" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="type" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pageEvaluate" type="xs:byte"/>
+    <xs:element name="categoryName">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="evaluateCategory" type="xs:byte"/>
+    <xs:element name="categoryPages">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pageInformations"/>
+                <xs:element ref="blocks" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element ref="pageEvaluate"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="catcolor" type="xs:string"/>
+    <xs:element name="fontColor" type="xs:string"/>
+    <xs:element name="backgroundColor" type="xs:string"/>
+    <xs:element name="description">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="image_categories">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="1" maxOccurs="unbounded">
+                    <xs:element ref="bg" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ca" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="cs" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="da" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="de-du" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="el" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="en" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="es-mx" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="eu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fa" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fi" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="fr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="he" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="hu" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="it" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ja" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ko" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="mr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="nl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pl" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt-br" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="pt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ro" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="ru" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-cr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sr-lt" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="sv" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="tr" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="uk" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-cn" maxOccurs="1" minOccurs="0"/>
+                    <xs:element ref="zh-tw" maxOccurs="1" minOccurs="0"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="showtomsstyle" type="xs:byte"/>
+    <xs:element name="literature">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:byte" name="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="interpretation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="description"/>
+                <xs:element ref="image_categories" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="required" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="header">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title"/>
+                <xs:element ref="description"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="body">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="showtomsstyle"/>
+                <xs:element ref="literature"/>
+                <xs:element ref="interpretation" maxOccurs="2" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="config">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="language"/>
+                <xs:element ref="graphs"/>
+                <xs:element ref="showHeaderButton"/>
+                <xs:element ref="mainColors"/>
+                <xs:element ref="questionnaireFileName"/>
+                <xs:element ref="priorityListObject"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="head">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element ref="button"/>
+                <xs:element ref="logo"/>
+                <xs:element ref="backgroundImage"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="footerLogo" maxOccurs="1" minOccurs="1"/>
+                <xs:element ref="footerText"/>
+                <xs:element ref="footerRight"/>
+                <xs:element ref="fontColor"/>
+                <xs:element ref="backgroundColor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="categories">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="categoryName"/>
+                <xs:element ref="evaluateCategory"/>
+                <xs:element ref="categoryPages" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element ref="catcolor" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="resultpage">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="header"/>
+                <xs:element ref="body"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="questionnaire">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="config" maxOccurs="1" minOccurs="1"/>
+                <xs:element ref="head" maxOccurs="1" minOccurs="1"/>
+                <xs:element ref="categories" maxOccurs="unbounded" minOccurs="2"/>
+                <xs:element ref="resultpage" maxOccurs="1" minOccurs="1"/>
+                <xs:element ref="footer" maxOccurs="1" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
